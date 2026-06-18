@@ -6,16 +6,13 @@ import {
   Images, 
   Megaphone, 
   Newspaper, 
-  FileCheck, 
   Droplets, 
   TrendingUp,
   Users,
   Award,
   ChevronRight,
   ArrowRight,
-  CreditCard,
-  FileText,
-  Calculator
+  FileText
 } from 'lucide-react';
 
 interface HomeProps {
@@ -82,7 +79,7 @@ export function Home({ onNavigate }: HomeProps) {
       onClick: () => onNavigate('news')
     },
     {
-      icon: TextFile,
+      icon: FileText, // Fixed: Changed from TextFile to FileText
       title: 'E-Library',
       description: 'Republic Acts and  Advocacy Materials',
       color: 'bg-orange-500',
@@ -121,7 +118,6 @@ export function Home({ onNavigate }: HomeProps) {
       description: 'View PolWD set of documents issued by the procuring entity',
       link: '#'
     }
-    
   ];
 
   const features = [
@@ -137,7 +133,7 @@ export function Home({ onNavigate }: HomeProps) {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section 
-        className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-950 text-white overflow-hidden"
+        className="relative bg-linear-to-br from-blue-900 via-blue-800 to-blue-950 text-white overflow-hidden" // Fixed: bg-gradient-to-br -> bg-linear-to-br
         style={{
           backgroundImage: `url('/water-drop.jpg')`,
           backgroundSize: 'cover',
@@ -146,7 +142,7 @@ export function Home({ onNavigate }: HomeProps) {
         }}
       >
         {/* Dark Overlay for Text Readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-950/80 via-blue-900/70 to-blue-950/80 z-0" />
+        <div className="absolute inset-0 bg-linear-to-b from-blue-950/80 via-blue-900/70 to-blue-950/80 z-0" /> 
         
         {/* Hanging Background Effects */}
         <div className="absolute inset-0 overflow-hidden z-0">
@@ -262,7 +258,12 @@ export function Home({ onNavigate }: HomeProps) {
                 <Card className="group h-full hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-200 cursor-pointer">
                   <CardContent className="p-8">
                     <div className="h-16 w-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
-                      <link.icon className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors" />
+                      {/* Fixed: Added conditional rendering to handle null icons gracefully */}
+                      {link.icon ? (
+                        <link.icon className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors" />
+                      ) : (
+                        <FileText className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors" />
+                      )}
                     </div>
                     <h3 className="text-xl font-bold text-blue-900 mb-2 group-hover:text-blue-700">
                       {link.title}
