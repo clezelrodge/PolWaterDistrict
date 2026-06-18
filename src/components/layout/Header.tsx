@@ -39,8 +39,7 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
               <span className="text-white font-bold text-xs">POLWD</span>
             </div>
             <div>
-              <p className="text-xs text-gray-600">REPUBLIC OF THE PHILIPPINES</p>
-              <h1 className="text-xl font-bold text-blue-700">Polomolok Water District</h1>
+              <h1 className="text-xl font-bold text-blue-800">Polomolok Water District</h1>
             </div>
           </div>
 
@@ -60,17 +59,6 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
               </button>
             ))}
           </nav>
-
-          {/* Search and Login */}
-          <div className="hidden lg:flex items-center gap-4">
-            <div className="flex items-center gap-2">
-              <Search className="h-4 w-4 text-gray-500" />
-              <span className="text-sm text-gray-600">Search</span>
-            </div>
-            <Button className="bg-blue-700 hover:bg-blue-800 rounded-full px-6">
-              Login / Sign up
-            </Button>
-          </div>
 
           {/* Mobile Menu Button */}
           <button

@@ -32,39 +32,33 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-blue-100">
               <li className="flex items-start gap-2">
                 <MapPin className="h-5 w-5 flex-shrink-0" />
-                <span>Polomolok, South Cotabato, Philippines</span>
+                <span>Dulay Subdivision, National Highway, Poblacion, Polomolok, South Cotabato, Philippines</span>
               </li>
-              <li className="flex items-center gap-2">
-                <Phone className="h-5 w-5 flex-shrink-0" />
-                <span>(083) 552-XXXX</span>
+              <li className="flex gap-2">
+                <Phone className="h-5 w-5 flex-shrink-0 mt-1" />
+                <div className="flex flex-col gap-1">
+                  <span>(083) 552-8008</span>
+                  <span>09101961330</span>
+                </div>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-5 w-5 flex-shrink-0" />
-                <span>info@polomolokwater.gov.ph</span>
+                <span>pol_wd@yahoo.com.ph</span>
               </li>
             </ul>
           </div>
 
           {/* Business Hours */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Business Hours</h3>
+            <h3 className="text-lg font-bold mb-4">Office Hours</h3>
             <ul className="space-y-2 text-sm text-blue-100">
-              <li className="flex justify-between">
+              <li className="flex flex-col gap-1">
                 <span>Monday - Friday</span>
-                <span>8:00 AM - 5:00 PM</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Saturday</span>
-                <span>8:00 AM - 12:00 PM</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Sunday</span>
-                <span>Closed</span>
+                <span>7:00 AM - 5:00 PM</span>
               </li>
             </ul>
           </div>
         </div>
-
         <div className="border-t border-blue-800 mt-8 pt-8 text-center text-sm text-blue-200">
           <p>&copy; 2026 Polomolok Water District. All rights reserved.</p>
         </div>

@@ -1,17 +1,21 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+
 import { 
-  FileText, 
-  Calculator, 
-  CreditCard, 
+  Images, 
+  Megaphone, 
+  Newspaper, 
   FileCheck, 
   Droplets, 
   TrendingUp,
   Users,
   Award,
   ChevronRight,
-  ArrowRight
+  ArrowRight,
+  CreditCard,
+  FileText,
+  Calculator
 } from 'lucide-react';
 
 interface HomeProps {
@@ -21,25 +25,25 @@ interface HomeProps {
 export function Home({ onNavigate }: HomeProps) {
   const onlineServices = [
     {
-      icon: FileText,
-      title: 'New Service Connection Application (NSCA)',
-      description: 'Apply for new water connection',
-      color: 'bg-blue-500',
-      onClick: () => onNavigate('services')
-    },
-    {
-      icon: FileCheck,
-      title: 'Bill Inquiry',
-      description: 'Check your billing status',
-      color: 'bg-green-500',
-      onClick: () => onNavigate('services')
-    },
-    {
-      icon: Calculator,
-      title: 'Bill Calculator',
-      description: 'Estimate your water bill',
+      icon: Megaphone,
+      title: 'Announcements',
+      description: 'Maintenance Repair Announcements',
       color: 'bg-red-500',
-      onClick: () => onNavigate('services')
+      onClick: () => onNavigate('announcements')
+    },
+    {
+      icon: Images,
+      title: 'Gallery',
+      description: 'View photos of PolWD',
+      color: 'bg-green-500',
+      onClick: () => onNavigate('images')
+    },
+    {
+      icon: Newspaper,
+      title: 'Latest News',
+      description: 'News relating the PolWD',
+      color: 'bg-gray-500',
+      onClick: () => onNavigate('news')
     },
     {
       icon: Droplets,
@@ -101,24 +105,50 @@ export function Home({ onNavigate }: HomeProps) {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjA1IiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-20" />
+        {/* Hanging Background Effects */}
+        <div className="absolute inset-0 overflow-hidden">
+          {/* Draped gradient shapes */}
+          <div className="absolute -top-20 -left-20 w-96 h-96 bg-blue-400/20 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute -top-40 -right-20 w-80 h-80 bg-cyan-400/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+          <div className="absolute top-1/2 -left-32 w-72 h-72 bg-blue-300/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
+          
+          {/* Hanging curved shapes */}
+          <div className="absolute top-0 left-0 w-full h-full">
+            <svg className="absolute top-0 left-0 w-full h-full opacity-10" viewBox="0 0 1440 800" preserveAspectRatio="none">
+              <path d="M0,0 Q360,200 720,100 T1440,0 V800 H0 Z" fill="url(#hangingGradient1)" />
+              <path d="M0,100 Q360,300 720,200 T1440,100 V800 H0 Z" fill="url(#hangingGradient2)" opacity="0.5" />
+              <defs>
+                <linearGradient id="hangingGradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stopColor="#ffffff" stopOpacity="0.3" />
+                  <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
+                </linearGradient>
+                <linearGradient id="hangingGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stopColor="#60a5fa" stopOpacity="0.2" />
+                  <stop offset="100%" stopColor="#60a5fa" stopOpacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          
+          {/* Floating water droplets */}
+          <div className="absolute top-20 left-1/4 w-4 h-4 bg-white/30 rounded-full blur-sm animate-bounce" style={{ animationDuration: '3s' }} />
+          <div className="absolute top-40 right-1/3 w-3 h-3 bg-cyan-200/40 rounded-full blur-sm animate-bounce" style={{ animationDuration: '4s', animationDelay: '1s' }} />
+          <div className="absolute top-60 left-1/2 w-5 h-5 bg-blue-200/30 rounded-full blur-sm animate-bounce" style={{ animationDuration: '5s', animationDelay: '2s' }} />
+          <div className="absolute top-32 right-1/4 w-2 h-2 bg-white/40 rounded-full blur-sm animate-bounce" style={{ animationDuration: '3.5s', animationDelay: '0.5s' }} />
+        </div>
         
-        <div className="container mx-auto px-4 py-16 lg:py-24 relative">
+        <div className="container mx-auto px-4 py-16 lg:py-24 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Side - Logo Collage */}
             <div className="text-center lg:text-left">
               <div className="inline-block p-8 bg-white/10 backdrop-blur-sm rounded-3xl mb-6">
-                <div className="text-8xl font-bold tracking-tighter">
-                  <span className="block text-transparent bg-clip-text bg-gradient-to-b from-white to-blue-200">P</span>
-                  <span className="block text-transparent bg-clip-text bg-gradient-to-b from-white to-blue-200">W</span>
-                  <span className="block text-transparent bg-clip-text bg-gradient-to-b from-white to-blue-200">D</span>
-                </div>
+                <img src="/PolWD_Logo.jpg" alt="Polomolok Water District Logo" className="w-64 h-auto" />
               </div>
               <h1 className="text-4xl lg:text-5xl font-bold mb-4">
-                Service with Dignity and Honor
+                Every Drop Counts!
               </h1>
               <p className="text-xl text-blue-100 mb-8">
-                Providing clean, reliable, and sustainable water services to the community of Polomolok
+                Providing clean, reliable, and sustainable water services to the community of Polomolok since 1980.
               </p>
               <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                 <Button 
@@ -165,7 +195,7 @@ export function Home({ onNavigate }: HomeProps) {
         </div>
 
         {/* Wave Divider */}
-        <div className="absolute bottom-0 left-0 right-0">
+        <div className="relative bottom-0 left-0 right-0">
           <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
           </svg>

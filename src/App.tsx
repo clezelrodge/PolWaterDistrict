@@ -5,7 +5,7 @@ import { Home } from './components/Home';
 import { Services } from './components/Services';
 
 // Define the possible views
-type View = 'home' | 'services' | 'about' | 'contact';
+type View = 'home' | 'services' | 'about' | 'contact' | 'announcements' | 'images' | 'news';
 
 function App() {
   const [activeView, setActiveView] = useState<View>('home');
@@ -21,6 +21,12 @@ function App() {
         return <Home onNavigate={navigateTo} />;
       case 'services':
         return <Services />;
+      case 'announcements':
+        return <div className="min-h-screen flex items-center justify-center p-8"><h1 className="text-4xl font-bold text-blue-900">Announcements - Coming Soon</h1></div>;
+      case 'images':
+        return <div className="min-h-screen flex items-center justify-center p-8"><h1 className="text-4xl font-bold text-blue-900">Gallery - Coming Soon</h1></div>;
+      case 'news':
+        return <div className="min-h-screen flex items-center justify-center p-8"><h1 className="text-4xl font-bold text-blue-900">Latest News - Coming Soon</h1></div>;
       case 'about':
         return <div className="min-h-screen flex items-center justify-center p-8"><h1 className="text-4xl font-bold text-blue-900">About Page - Coming Soon</h1></div>;
       case 'contact':
