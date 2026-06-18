@@ -82,26 +82,12 @@ export function Home({ onNavigate }: HomeProps) {
       onClick: () => onNavigate('news')
     },
     {
-      icon: Droplets,
-      title: "Enroll in Electronic Billing Service",
-      description: 'Get bills via email',
-      color: 'bg-yellow-500',
-      onClick: () => onNavigate('services')
-    },
-    {
-      icon: TrendingUp,
-      title: 'Freedom of Information Request',
-      description: 'Submit FOI request',
-      color: 'bg-purple-500',
-      onClick: () => onNavigate('services')
-    },
-    {
-      icon: CreditCard,
-      title: 'Online Payment',
-      description: 'Pay your bill online',
-      color: 'bg-indigo-500',
-      onClick: () => onNavigate('services')
-    },
+      icon: TextFile,
+      title: 'E-Library',
+      description: 'Republic Acts and  Advocacy Materials',
+      color: 'bg-orange-500',
+      onClick: () => onNavigate('lib')
+    }
   ];
 
   const quickLinks = [
@@ -123,6 +109,19 @@ export function Home({ onNavigate }: HomeProps) {
       description: 'Access Freedom of Information Philippines',
       link: '#'
     },
+    {
+      icon: null,
+      title: 'Downloadable Forms',
+      description: 'For your convenience, here are our downloadable forms',
+      link: '#'
+    },
+    {
+      icon: null,
+      title: 'Bids and Awards Committee',
+      description: 'View PolWD set of documents issued by the procuring entity',
+      link: '#'
+    }
+    
   ];
 
   const features = [
@@ -130,9 +129,6 @@ export function Home({ onNavigate }: HomeProps) {
     { icon: Users, title: "Citizen's Charter", desc: 'Formed by the virtue in Republic Act No. 11032' },
     { icon: TrendingUp, title: 'PhilGeps', desc: 'Transparency in government procurement is enhanced' },
     { icon: FileText, title: 'eFOI', desc: 'Access Freedom of Information Philippines' },
-    { icon: Calculator, title: 'Water Rates', desc: 'View our PolWD Water Rates' },
-    { icon: Droplets, title: 'Laboratory Rates', desc: 'View our PolWD Laboratory Rates' },
-    { icon: FileCheck, title: 'Calibration Laboratory Rates', desc: 'View our PolWD Calibration Laboratory Rates' },
     { icon: FileText, title: 'Downloadable Forms', desc: 'For your convenience, here are our downloadable forms' },
     { icon: Award, title: 'Bids and Awards', desc: 'View PolWD set of documents issued by the procuring entity' },
   ];
@@ -316,32 +312,6 @@ export function Home({ onNavigate }: HomeProps) {
                 </Card>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Need Help?</h2>
-          <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
-            Our customer service team is ready to assist you with any questions or concerns about your water service.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Button 
-              size="lg" 
-              variant="secondary"
-              className="rounded-full px-8"
-              onClick={() => onNavigate('contact')}
-            >
-              Contact Us
-            </Button>
-            <Button 
-              size="lg" 
-              className="bg-white text-blue-700 hover:bg-blue-50 rounded-full px-8"
-            >
-              View FAQs
-            </Button>
           </div>
         </div>
       </section>
