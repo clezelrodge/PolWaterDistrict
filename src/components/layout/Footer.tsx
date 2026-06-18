@@ -9,6 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About */}
           <div>
+            <img src="/PolWD_Logo.jpg" alt="Polomolok Water District Logo" className="h-16 w-16 full object-cover mb-4" />
             <h3 className="text-lg font-bold mb-4">Polomolok Water District</h3>
             <p className="text-blue-100 text-sm leading-relaxed">
               Serving clean, reliable, and sustainable water solutions to the municipality of Polomolok since 1980.

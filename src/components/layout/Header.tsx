@@ -35,9 +35,7 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="h-12 w-12 rounded-full bg-blue-700 flex items-center justify-center">
-              <span className="text-white font-bold text-xs">POLWD</span>
-            </div>
+            <img src="/PolWD_Logo.jpg" alt="Polomolok Water District Logo" className="h-12 w-12 full object-cover" />
             <div>
               <h1 className="text-xl font-bold text-blue-800">Polomolok Water District</h1>
             </div>
