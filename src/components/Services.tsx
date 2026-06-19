@@ -1,7 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { FileText, Calculator, CreditCard, FileCheck, TrendingUp, Droplets } from 'lucide-react';
+import { FileText, CreditCard, FileCheck, TrendingUp, Droplets } from 'lucide-react';
 
 export function Services() {
   return (
