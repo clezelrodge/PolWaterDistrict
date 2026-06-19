@@ -9,10 +9,10 @@ export function useScrollReveal<T extends HTMLElement>(threshold = 0.1) {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.unobserve(entry.target); // Trigger animation only once
+          observer.unobserve(entry.target);
         }
       },
-      { threshold } // Triggers when 10% of the section is visible
+      { threshold }
     );
 
     if (ref.current) {

@@ -1,0 +1,20 @@
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+
+export function About() {
+    return (
+        <div>
+            <div className="min-h-screen bg-gray-50 py-12">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-blue-900 mb-4">About Us</h1>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Discover more about Polomolok Water District.
+          </p>
+        </div>
+        </div>
+        </div>
+        </div>
+    );
+}

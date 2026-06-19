@@ -12,7 +12,10 @@ import {
   Award,
   ChevronRight,
   ArrowRight,
-  FileText
+  FileText,
+  Download,
+  Library,
+  Trophy,
 } from 'lucide-react';
 
 interface HomeProps {
@@ -79,7 +82,7 @@ export function Home({ onNavigate }: HomeProps) {
       onClick: () => onNavigate('news')
     },
     {
-      icon: FileText, // Fixed: Changed from TextFile to FileText
+      icon: Library,
       title: 'E-Library',
       description: 'Republic Acts and  Advocacy Materials',
       color: 'bg-orange-500',
@@ -107,13 +110,13 @@ export function Home({ onNavigate }: HomeProps) {
       link: '#'
     },
     {
-      icon: null,
+      icon: Download,
       title: 'Downloadable Forms',
       description: 'For your convenience, here are our downloadable forms',
       link: '#'
     },
     {
-      icon: null,
+      icon: Trophy,
       title: 'Bids and Awards Committee',
       description: 'View PolWD set of documents issued by the procuring entity',
       link: '#'
@@ -125,19 +128,18 @@ export function Home({ onNavigate }: HomeProps) {
     { icon: Users, title: "Citizen's Charter", desc: 'Formed by the virtue in Republic Act No. 11032' },
     { icon: TrendingUp, title: 'PhilGeps', desc: 'Transparency in government procurement is enhanced' },
     { icon: FileText, title: 'eFOI', desc: 'Access Freedom of Information Philippines' },
-    { icon: FileText, title: 'Downloadable Forms', desc: 'For your convenience, here are our downloadable forms' },
+    { icon: Download, title: 'Downloadable Forms', desc: 'For your convenience, here are our downloadable forms' },
     { icon: Award, title: 'Bids and Awards', desc: 'View PolWD set of documents issued by the procuring entity' },
   ];
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
       <section 
-        className="relative bg-linear-to-br from-blue-900 via-blue-800 to-blue-950 text-white overflow-hidden" // Fixed: bg-gradient-to-br -> bg-linear-to-br
+        className="relative bg-linear-to-br from-blue-900 via-blue-800 to-blue-950 text-white overflow-hidden"
         style={{
-          backgroundImage: `url('/water-drop.jpg')`,
+          backgroundImage: `url('/polwd.jpg')`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center bottom',
+          backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
         }}
       >
@@ -187,7 +189,7 @@ export function Home({ onNavigate }: HomeProps) {
                 Every Drop Counts!
               </h1>
               <p className="text-xl text-blue-100 mb-8 drop-shadow-md">
-                Providing clean, reliable, and sustainable water services to the community of Polomolok since 1980.
+                To Report Leaks & Illegal Connections, call the PolWD Hotline No. 0917 700 5248 or (083)500-8008. We have 24/7 maintenance monitoring.
               </p>
               <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                 <Button 
