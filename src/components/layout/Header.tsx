@@ -33,25 +33,29 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
 
   return (
     <header 
-      className={`sticky top-0 z-50 w-full transition-all duration-500 ${
+      className={`sticky top-0 z-50 w-full ${
         scrolled 
           ? 'bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-lg' 
-          : 'bg-transparent' // Completely transparent when at top
+          : 'bg-transparent' // Completely transparent - hero image shows through
       }`}
     >
-      {/* Dark overlay only when not scrolled - matches hero exactly */}
-      {!scrolled && (
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-950/80 via-blue-90/70 to-blue-950/60 pointer-events-none" />
-      )}
+
+
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <img src="/PolWD_Logo.jpg" alt="Polomolok Water District Logo" className="h-12 w-12 object-cover rounded-lg" />
+            <img 
+              src="/PolWD_Logo.jpg" 
+              alt="Polomolok Water District Logo" 
+              className="h-12 w-12 object-cover rounded-lg" 
+            />
             <div>
-              <h1 className={`text-xl font-bold transition-all duration-500 ${
-                scrolled ? 'text-blue-800' : 'text-white drop-shadow-lg'
+              <h1 className={`text-xl font-bold transition-colors duration-300 ${
+                scrolled 
+                  ? 'text-blue-800' 
+                  : 'text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]'
               }`}>
                 Polomolok Water District
               </h1>
@@ -71,7 +75,7 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
                         : 'text-gray-700 hover:text-blue-700 hover:bg-gray-50')
                     : (currentView === item.value
                         ? 'text-white bg-white/20 backdrop-blur-sm'
-                        : 'text-white/90 hover:text-white hover:bg-white/10')
+                        : 'text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)] hover:text-white hover:bg-white/10')
                 }`}
               >
                 {item.label}
@@ -81,7 +85,11 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
 
           {/* Mobile Menu Button */}
           <button
-            className={`lg:hidden p-2 transition-colors ${scrolled ? 'text-gray-700' : 'text-white'}`}
+            className={`lg:hidden p-2 transition-colors ${
+              scrolled 
+                ? 'text-gray-700' 
+                : 'text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)]'
+            }`}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X /> : <Menu />}
@@ -90,8 +98,10 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className={`lg:hidden py-4 border-t relative z-10 transition-colors ${
-            scrolled ? 'bg-white/95 border-gray-200' : 'bg-blue-950/80 backdrop-blur-md border-white/20'
+          <div className={`lg:hidden py-4 border-t relative z-10 ${
+            scrolled 
+              ? 'bg-white/95 backdrop-blur-md border-gray-200' 
+              : 'bg-blue-950/40 backdrop-blur-md border-white/20' // Slight dark bg for readability
           }`}>
             <nav className="flex flex-col gap-2">
               {navItems.map((item) => (

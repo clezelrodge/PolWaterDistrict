@@ -134,17 +134,17 @@ export function Home({ onNavigate }: HomeProps) {
 
   return (
     <div className="min-h-screen">
-      <section 
-        className="relative bg-linear-to-br from-blue-900 via-blue-800 to-blue-950 text-white overflow-hidden"
+      <div 
+        className="relative -mt-[80px]" 
         style={{
           backgroundImage: `url('/polwd.jpg')`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundPosition: 'center top',
           backgroundAttachment: 'fixed'
         }}
       >
         {/* Dark Overlay for Text Readability */}
-        <div className="absolute inset-0 bg-linear-to-b from-blue-950/80 via-blue-900/70 to-blue-950/80 z-0" /> 
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-950/80 via-blue-900/70 to-blue-950/80 z-0" /> 
         
         {/* Hanging Background Effects */}
         <div className="absolute inset-0 overflow-hidden z-0">
@@ -185,7 +185,7 @@ export function Home({ onNavigate }: HomeProps) {
               <div className="inline-block p-8 bg-white/10 backdrop-blur-sm rounded-3xl mb-6">
                 <img src="/PolWD_Logo.jpg" alt="Polomolok Water District Logo" className="w-64 h-auto" />
               </div>
-              <h1 className="text-4xl lg:text-5xl font-bold mb-4 drop-shadow-lg">
+              <h1 className="text-4xl lg:text-5xl text-blue-100 font-bold mb-4 drop-shadow-lg">
                 Every Drop Counts!
               </h1>
               <p className="text-xl text-blue-100 mb-8 drop-shadow-md">
@@ -236,15 +236,15 @@ export function Home({ onNavigate }: HomeProps) {
         </div>
 
         {/* Wave Divider */}
-        <div className="relative bottom-0 left-0 right-0 z-10">
-          <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
-          </svg>
+        <div className="relative bottom-0 left-0 right-0 z-10 -mb-px">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" className="block w-full">
+              <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V122H1380C1320 122 1200 122 1080 122C960 122 840 122 720 122C600 122 480 122 360 122C240 122 120 122 60 122H0Z" fill="white"/>
+            </svg>
+          </div>
         </div>
-      </section>
 
       {/* Quick Links Section */}
-      <section ref={quickLinksRef} className="py-16 bg-white">
+      <section ref={quickLinksRef} className="py-16 bg-white -mt-px">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-blue-900 mb-12">Quick Links</h2>
           <div className="grid md:grid-cols-3 gap-8">
