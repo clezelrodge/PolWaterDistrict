@@ -1,5 +1,30 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { AccordionItem } from './Accordion';
+
+const HistoryAccordion: React.FC = () => {
+  return (
+    <div className="max-w-2xl mx-auto ">
+      <h2 className="text-xl font-bold mb-4">History</h2>
+      
+      <AccordionItem title="1980">
+        <p className="text-gray-600">On October 9, the Polomolok Water District was established as an independent entity under the leadership of Mayor Saturnino Calulo by virtue of Sangguniang Bayan Resolution No. 63, with Hilarion P. Visande, Jr. serving as its first General Manager.</p>
+      </AccordionItem>
+
+      <AccordionItem title="1981">
+        <p className="text-gray-600">The Local Water Utilities Administration (LWUA) issued Conditional Certificate of Conformance (CCC) No. 153 on June 19, 1981. This entitled the Polomolok Water District to all rights and privileges authorized under Presidential Decree 198 as amended.</p>
+      </AccordionItem>
+
+      <AccordionItem title="1982">
+        <p className="text-gray-600">Polomolok Water District (PolWD) availed a mini loan of P100,000.00 in the form of service connection materials, pipes, fittings, plumbing tools, water meters and office equipments from the Local Water Utilities Administration (LWUA).</p>
+      </AccordionItem>
+
+      <AccordionItem title="1985">
+        <p className="text-gray-600">Implemented the Interim Improvement Program for Phase IA Project worth P5.7M for the construction of 1 deep well, installation of vertical turbine pump including electro-mechanical components such as motor pump and providing a stand-by diesel engine and provision for replacement parts and installation of various sizes of pipes for transmission and distribution lines.</p>
+      </AccordionItem>
+    </div>
+  );
+};
 
 export function About() {
     return (
@@ -21,13 +46,10 @@ export function About() {
 
     <TabsContent value="history">
         <Card>
-            <CardHeader>
-                <CardTitle>History</CardTitle>
-            </CardHeader>
             <CardContent className="justify-center">
               <p className="text-justify">
-                1980: On October 9, the Polomolok Water District was established as an independent entity under the leadership of Mayor Saturnino Calulo by virtue of Sangguniang Bayan Resolution No. 63, with Hilarion P. Visande, Jr. serving as its first General Manager. The Local Water Utilities Administration (LWUA) issued Conditional Certificate of Conformance (CCC) No. 153 on June 19, 1981. This entitled the Polomolok Water District to all rights and privileges authorized under Presidential Decree 198 as amended. In 1982, Polomolok Water District (PolWD) availed a mini loan of P100,000.00 in the form of service connection materials, pipes, fittings, plumbing tools, water meters and office equipments from the Local Water Utilities Administration (LWUA). In 1985, implemented the Interim Improvement Program for Phase IA Project worth P5.7M for the construction of 1 deep well, installation of vertical turbine pump including electro-mechanical components such as motor pump and providing a stand-by diesel engine and provision for replacement parts and installation of various sizes of pipes for transmission and distribution lines. In 1989, Construction of Sitio Cebuano Pump Station and valve appurtenances. In 1990, Construction of Polomolok WD Administration Bldg. using savings of P860,000.00 from Phase IA Project. In Sept. 27, 1991, WDs were declared as Government Owned and Controlled Corporations (GOCC) by virtue of Supreme Court En Banc Decision. In 1992, Started the exploratory well drilling for the proposed Phase II Improvement Project. In 1995 to 1996, Implemented the Phase II Expansion & Improvement Project. An ADB/LWUA Project worth P68.221M for the construction of 5 deep wells located at Brgy. Sulit, Pagalungan, Cannery and Polo, installation of vertical turbine pumps including electro-mechanical components such as motor pumps and providing a stand-by diesel engine and provision for replacement parts and installation of various sizes of pipes for transmission and distribution lines. In 2007-2008, Appointment of Engr. Andresito J. Degilla as 2nd General Manager of Polomolok WD. Implemented the Phase III Expansion & Rehabilitation and Improvement Project worth P34.4M covering 15 new Subdivisions within the Polomolok WD service area including the construction of additional deep well at Brgy. Upper Klinan. In 2009, Utilized savings of P5M from Phase III Project for the expansion & rehabilitation of mainline going to Silway-8 to increase pressure. The same year, Polomolok WD was Recategorized from Average WD to Medium WD.
               </p>
+              <HistoryAccordion />
             </CardContent>
         </Card>
     </TabsContent>
