@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import type { View } from '../App';
 
-import { 
-  Images, 
-  Megaphone, 
-  Newspaper, 
-  Droplets, 
+import {
+  Images,
+  Megaphone,
+  Newspaper,
+  Droplets,
   TrendingUp,
   Users,
   Award,
@@ -19,7 +20,7 @@ import {
 } from 'lucide-react';
 
 interface HomeProps {
-  onNavigate: (view: string) => void;
+  onNavigate: (view: View) => void;
 }
 
 export function Home({ onNavigate }: HomeProps) {
@@ -221,7 +222,7 @@ export function Home({ onNavigate }: HomeProps) {
                     <button
                       key={index}
                       onClick={service.onClick}
-                      className="group flex flex-col items-center p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300 hover:scale-105"
+                      className="group flex flex-col items-center p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300 hover:scale-105 cursor-pointer"
                     >
                       <div className={`h-16 w-16 ${service.color} rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-lg`}>
                         <service.icon className="h-8 w-8 text-white" />
@@ -273,7 +274,7 @@ export function Home({ onNavigate }: HomeProps) {
                       {link.title}
                     </h3>
                     <p className="text-gray-600 text-sm mb-4">{link.description}</p>
-                    <button className="text-green-600 font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                    <button className="text-green-600 font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all cursor-pointer">
                       Learn More <ChevronRight className="h-4 w-4" />
                     </button>
                   </CardContent>

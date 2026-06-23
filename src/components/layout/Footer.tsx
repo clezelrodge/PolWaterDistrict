@@ -1,5 +1,3 @@
-import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
 export function Footer() {

@@ -2,9 +2,11 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 
+import type { View } from '../../App';
+
 interface HeaderProps {
-  currentView: string;
-  onNavigate: (view: string) => void;
+  currentView: View;
+  onNavigate: (view: View) => void;
 }
 
 export function Header({ currentView, onNavigate }: HeaderProps) {
@@ -19,7 +21,7 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navItems = [
+  const navItems: { label: string; value: View }[] = [
     { label: 'Home', value: 'home' },
     { label: 'Services', value: 'services' },
     { label: 'About', value: 'about' },

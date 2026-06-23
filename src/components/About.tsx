@@ -1,6 +1,8 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { AccordionItem } from '@/components/ui/Accordion';
+import { Link as LinkIcon, FileText } from 'lucide-react';
+import { Dot as Dot } from 'lucide-react';
 
 const HistoryAccordion: React.FC = () => {
   return (
@@ -54,6 +56,160 @@ const HistoryAccordion: React.FC = () => {
   );
 };
 
+const MandatesAccordion: React.FC = () => {
+  return (
+    <div className="max-w-2xl mx-auto ">
+      <h2 className="text-3xl text-blue-800 font-bold mb-4">Mandates</h2>
+      
+      <AccordionItem title="Legal Basis on the creation of Polomolok Water District">
+        <a href="https://lawphil.net/statutes/presdecs/pd1973/pd_198_1973.html" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-600 hover:text-blue-800 underline flex items-center gap-2">
+          <LinkIcon className="w-4 h-4" />
+          https://lawphil.net/statutes/presdecs/pd1973/pd_198_1973.html
+        </a>
+        <div className="flex items-center gap-2 mt-2">
+          <FileText className="w-4 h-4 text-gray-600" />
+          <p className="text-lg text-left text-justify text-gray-700">Sangguniang Bayan Resolution No.  63 Series of 1980.</p>
+        </div>  
+        <div className="flex items-center gap-2 mt-2">
+          <FileText className="w-4 h-4 text-gray-600" />
+          <p className="text-lg text-gray-700">LWUA Certificate of Conformance No. 153 Dated June 19, 1981.</p>
+        </div>
+      </AccordionItem>
+
+      <AccordionItem title="System of Operation">
+        <div className="flex items-center gap-2 mt-2">
+          <Dot size={26} className="mt-2" />
+          <p className="text-lg text-left text-justify text-gray-700">Private Entity (1980 - 1990)</p>
+        </div>
+        <div className="flex items-center gap-2 mt-2"> 
+          <Dot size={26} className="mt-2" />
+          <p className="text-lg text-left text-justify text-gray-700">Government Owned and Controlled Corporation (1991 - Present)</p>
+        </div>
+      </AccordionItem>
+
+      <AccordionItem title="Purpose and Formation (PD 198 Chapter II Sec. 5)">
+      <p className="text-xl font-bold text-gray-700">Local water district may be formed pursuant to this title for the purpose of:</p>
+       <div className="flex items-start gap-2 mt-2">
+        <Dot size={76} className="mt-2" />
+        <p className="text-lg text-justify text-gray-700">Acquiring, installing, improving, maintaining and operating water supply and distribution systems for domestic, industrial, municipal and agricultural uses for residents and lands within the boundaries of such districts.</p>
+       </div>
+       <div className="flex items-start gap-2 mt-2">
+        <Dot size={36} className="mt-2" />
+        <p className="text-lg text-justify text-gray-700">Providing, maintaining and operating wastewater collection, treatment and disposal facilities, and</p>
+       </div>
+       <div className="flex items-start gap-2 mt-2">
+        <Dot size={74} className="mt-2" />
+        <p className="text-lg text-justify text-gray-700">Conducting such other functions and operations incident to water resources development, utilization and disposal within such districts, as are necessary or incidental to said purpose.</p>
+       </div>
+      </AccordionItem>
+
+      <AccordionItem title="Watershed Management (PD 198 Chapter VII-Sec. 31-e)">
+        <div className="flex items-start gap-2 mt-2">
+        <Dot size={76} className="mt-2" />
+        <p className="text-lg text-justify text-gray-700"> A district shall have the right to: Take over the management, administration, operation, and maintenance of all watersheds within its territorial boundaries.</p>
+        </div>
+      </AccordionItem>
+    </div>
+  );
+};
+
+const FunctionsAccordion: React.FC = () => {
+  return (
+    <div className="max-w-2xl mx-auto ">
+      <h2 className="text-3xl text-blue-800 font-bold mb-4">Functions</h2>
+      
+      <AccordionItem title="Office of the Board of Directors">
+        <div className="flex items-start gap-2 mt-2">
+          <Dot size={26} className="mt-2" />
+          <p className="text-lg text-justify text-gray-700">Appoints General Manager and the Legal Officer;</p>
+        </div>
+        <div className="flex items-start gap-2 mt-2">
+          <Dot size={80} className="mt-2" />
+          <p className="text-lg text-justify text-gray-700">Approves the Water District's rules and regulations, corporate plan, annual budget, contracts, loans, acquisition of real property at pre-determined amounts and nature, organizational structure, compensation and benefits, water rates and charges;</p>
+        </div>
+        <div className="flex items-start gap-2 mt-2">
+          <Dot size={25} className="mt-2" />
+          <p className="text-lg text-justify text-gray-700">The policy making body of Water District.</p>
+        </div>
+        <div className="flex items-start gap-2 mt-2">
+          <Dot size={28} className="mt-2" />
+          <p className="text-lg text-justify text-gray-700">Responsible for the operation of the District and its long term and short-term planning.</p>
+        </div>
+        <div className="flex items-start gap-2 mt-2">
+          <Dot size={102} className="mt-2" />
+          <p className="text-lg text-justify text-gray-700">Recommends organizational structure and manpower level, compensation and benefits schedules, water rates and charges, acquisition of real property, construction contracts, acceptance of completed projects, management strategies appropriate for the district, executes payment for approved projects and programs.</p>
+        </div>
+      </AccordionItem>
+
+      <AccordionItem title="Office of the General Manager">
+        <div className="flex items-start gap-2 mt-2">
+          <Dot size={30} className="mt-2" />
+          <p className="text-lg text-justify text-gray-700">Responsible for the operation of the District and its long term and short-term planning.</p>
+        </div>
+        <div className="flex items-start gap-2 mt-2">
+          <Dot size={102} className="mt-2" />
+          <p className="text-lg text-justify text-gray-700">Recommends organizational structure and manpower level, compensation and benefits schedules, water rates and charges, acquisition of real property, construction contracts, acceptance of completed projects, management strategies appropriate for the district, executes payment for approved projects and programs.</p>
+        </div>
+      </AccordionItem>
+
+      <AccordionItem title="Administrative and General Services Division">
+        <div className="flex items-start gap-2 mt-2">
+          <Dot size={36} className="mt-2" />
+          <p className="text-lg text-justify text-gray-700">Formulates and implements human resource programs, policies and procedures pursuant to Civil Service laws and rules;</p>
+      </div>
+      <div className="flex items-start gap-2 mt-2">
+        <Dot size={36} className="mt-2" />
+        <p className="text-lg text-justify text-gray-700">Formulates and implements procedures on procurement of adequate supply of quality materials, equipment and services;</p>
+      </div>
+      <div className="flex items-start gap-2 mt-2">
+        <Dot size={28} className="mt-2" />
+        <p className="text-lg text-justify text-gray-700">Formulates and implements policies on records management for the whole organization.</p>
+      </div>
+      <div className="flex items-start gap-2 mt-2">
+        <Dot size={38} className="mt-2" />
+        <p className="text-lg text-justify text-gray-700">Formulates and implements policies related to security measures of building, grounds and people in the organization.</p>
+      </div>
+      <div className="flex items-start gap-2 mt-2">
+        <Dot size={54} className="mt-2" />
+        <p className="text-lg text-justify text-gray-700">Formulates and implements systems on warehousing and maintenance of materials, supplies, vehicles and equipment in accordance with the regulations and policies.</p>
+      </div>
+      <div className="flex items-start gap-2 mt-2">
+        <Dot size={26} className="mt-2" />
+        <p className="text-lg text-justify text-gray-700">Procurement, Personnel and Gen. Services ( 3 Sections).</p>
+      </div>
+      </AccordionItem>
+
+      <AccordionItem title="Finance Division">
+        <div className="flex items-start gap-2 mt-2">
+          <Dot size={60} className="mt-2" />
+          <p className="text-lg text-justify text-gray-700">Responsible for the maintenance of the corporate books of accounts and all accounting records, documents and the preparation of Financial and Accounting reports and Analysis.</p>
+        </div>
+        <div className="flex items-start gap-2 mt-2">
+          <Dot size={46} className="mt-2" />
+          <p className="text-lg text-justify text-gray-700">Implements procedures and policies on cash management particularly on safekeeping, disbursement, control of water districts funds. </p>
+        </div>
+        <div className="flex items-start gap-2 mt-2">
+          <Dot size={44} className="mt-2" />
+          <p className="text-lg text-justify text-gray-700">Also implements procedures and policies on collection of water bills, cash funds and other monies or income of the District.</p>
+        </div>
+        <div className="flex items-start gap-2 mt-2">
+          <Dot size={60} className="mt-2" />
+          <p className="text-lg text-justify text-gray-700">Coordinates with concerned departments in the preparation of the annual budget and prepares and monitors projected financial reports based on approved annual budget.</p>
+        </div>
+        <div className="flex items-start gap-2 mt-2">
+          <Dot size={26} className="mt-2" />
+          <p className="text-lg text-justify text-gray-700">Cash, Budget & Accounting Services ( 3 Sections)</p>
+        </div>
+      </AccordionItem>
+
+      <AccordionItem title="Cash, Budget & Accounting Services ( 3 Sections)">
+        
+      </AccordionItem>
+    </div>
+  );
+};
+
+
 export function About() {
     return (
         <div>
@@ -100,11 +256,11 @@ export function About() {
     </TabsContent>
     <TabsContent value="mf">
         <Card>
-            <CardHeader>
-                <CardTitle>Mandates and Functions</CardTitle>
-            </CardHeader>
-            <CardContent>
-                <p>Mandates and Functions content goes here...</p>
+            <CardContent className="justify-center">
+              <MandatesAccordion />
+              <div className="mt-8">
+                <FunctionsAccordion />
+              </div>
             </CardContent>
         </Card>
     </TabsContent>

@@ -7,7 +7,7 @@ import { About } from './components/About';
 import { BackToTop } from './components/ui/arrowup';
 
 // Define the possible views
-type View = 'home' | 'services' | 'about' | 'contact' | 'announcements' | 'images' | 'news';
+export type View = 'home' | 'services' | 'about' | 'contact' | 'announcements' | 'images' | 'news' | 'lib' | 'csr' | 'gad' | 'watershed' | 'sanitation' | 'hr' | 'trainings';
 
 function App() {
   const [activeView, setActiveView] = useState<View>('home');
