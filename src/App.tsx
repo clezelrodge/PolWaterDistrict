@@ -4,6 +4,7 @@ import { Footer } from './components/layout/Footer';
 import { Home } from './components/Home';
 import { Services } from './components/Services';
 import { About } from './components/About';
+import { BackToTop } from './components/ui/arrowup';
 
 // Define the possible views
 type View = 'home' | 'services' | 'about' | 'contact' | 'announcements' | 'images' | 'news';
@@ -41,10 +42,11 @@ function App() {
     <div className="min-h-screen flex flex-col bg-background">
       <Header currentView={activeView} onNavigate={navigateTo} />
       {/* Changed flex-grow to grow to fix the Tailwind warning */}
-      <main className="grow"> 
+      <main className="grow">
         {renderView()}
       </main>
       <Footer />
+      <BackToTop />
     </div>
   );
 }

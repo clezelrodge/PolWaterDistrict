@@ -23,7 +23,6 @@ interface HomeProps {
 }
 
 export function Home({ onNavigate }: HomeProps) {
-  // Setup Intersection Observer directly here
   const quickLinksRef = useRef<HTMLElement>(null);
   const [quickLinksVisible, setQuickLinksVisible] = useState(false);
 
@@ -58,7 +57,7 @@ export function Home({ onNavigate }: HomeProps) {
       observer2.disconnect();
     };
   }, []);
-
+    //Online Services (To be Changed or Edit)
   const onlineServices = [
     {
       icon: Megaphone,
@@ -89,7 +88,7 @@ export function Home({ onNavigate }: HomeProps) {
       onClick: () => onNavigate('lib')
     }
   ];
-
+        //Quick Links//
   const quickLinks = [
     {
       icon: Droplets,
@@ -122,7 +121,7 @@ export function Home({ onNavigate }: HomeProps) {
       link: '#'
     }
   ];
-
+      //Features//
   const features = [
     { icon: Award, title: 'Philippine Transparency Seal', desc: 'Enhance Transparency. Enforce Accountability' },
     { icon: Users, title: "Citizen's Charter", desc: 'Formed by the virtue in Republic Act No. 11032' },
@@ -131,7 +130,7 @@ export function Home({ onNavigate }: HomeProps) {
     { icon: Download, title: 'Downloadable Forms', desc: 'For your convenience, here are our downloadable forms' },
     { icon: Award, title: 'Bids and Awards', desc: 'View PolWD set of documents issued by the procuring entity' },
   ];
-
+      //Background//
   return (
     <div className="min-h-screen">
       <div 
@@ -143,17 +142,12 @@ export function Home({ onNavigate }: HomeProps) {
           backgroundAttachment: 'fixed'
         }}
       >
-        {/* Dark Overlay for Text Readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-blue-950/80 via-blue-900/70 to-blue-950/80 z-0" /> 
         
-        {/* Hanging Background Effects */}
         <div className="absolute inset-0 overflow-hidden z-0">
-          {/* Draped gradient shapes */}
           <div className="absolute -top-20 -left-20 w-96 h-96 bg-blue-400/30 rounded-full blur-3xl animate-pulse" />
           <div className="absolute -top-40 -right-20 w-80 h-80 bg-cyan-400/30 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
           <div className="absolute top-1/2 -left-32 w-72 h-72 bg-blue-300/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
-          
-          {/* Hanging curved shapes */}
           <div className="absolute top-0 left-0 w-full h-full">
             <svg className="absolute top-0 left-0 w-full h-full opacity-10" viewBox="0 0 1440 800" preserveAspectRatio="none">
               <path d="M0,0 Q360,200 720,100 T1440,0 V800 H0 Z" fill="url(#hangingGradient1)" />
@@ -171,7 +165,6 @@ export function Home({ onNavigate }: HomeProps) {
             </svg>
           </div>
           
-          {/* Floating water droplets */}
           <div className="absolute top-20 left-1/4 w-4 h-4 bg-white/30 rounded-full blur-sm animate-bounce" style={{ animationDuration: '3s' }} />
           <div className="absolute top-40 right-1/3 w-3 h-3 bg-cyan-200/40 rounded-full blur-sm animate-bounce" style={{ animationDuration: '4s', animationDelay: '1s' }} />
           <div className="absolute top-60 left-1/2 w-5 h-5 bg-blue-200/30 rounded-full blur-sm animate-bounce" style={{ animationDuration: '5s', animationDelay: '2s' }} />
@@ -180,17 +173,25 @@ export function Home({ onNavigate }: HomeProps) {
         
         <div className="container mx-auto px-4 py-20 lg:py-28 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
+
             {/* Left Side - Logo Collage */}
+
             <div className="text-center lg:text-left">
-              <div className="inline-block p-8 bg-white/10 backdrop-blur-sm rounded-3xl mb-6">
-                <img src="/PolWD_Logo.jpg" alt="Polomolok Water District Logo" className="w-64 h-auto" />
-              </div>
               <h1 className="text-4xl lg:text-5xl text-blue-100 font-bold mb-4 drop-shadow-lg">
                 Every Drop Counts!
               </h1>
-              <p className="text-xl text-blue-100 mb-8 drop-shadow-md">
-                To Report Leaks & Illegal Connections, call the PolWD Hotline No. 0917 700 5248 or (083)500-8008. We have 24/7 maintenance monitoring.
-              </p>
+              <h2 className="text-2xl lg:text-3xl text-blue-100 font-semibold mb-4 drop-shadow-lg">
+                WE CARE Because You Deserve The BEST.
+              </h2>
+              <h3 className="text-xl text-blue-100 drop-shadow-md">
+                Text your concerns to our AGAS Patrol.
+                </h3>
+              <h4 className="text-xl text-blue-100 drop-shadow-md">
+               Text: "AGAS (your name) (your address) (your concern)"
+              </h4>
+              <h5 className="text-xl text-blue-100 mb-8 drop-shadow-md">
+                Send to 0917 700 5248
+              </h5>
               <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                 <Button 
                   size="lg" 
@@ -211,6 +212,7 @@ export function Home({ onNavigate }: HomeProps) {
             </div>
 
             {/* Right Side - Online Services Panel */}
+
             <Card className="bg-white/10 backdrop-blur-md border-white/20 text-white shadow-2xl">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-center mb-8 drop-shadow-md">Online Services</h2>

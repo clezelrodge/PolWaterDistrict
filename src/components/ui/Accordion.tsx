@@ -9,13 +9,13 @@ export const AccordionItem: React.FC<AccordionItemProps> = ({ title, children })
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border border-gray-200 rounded mb-2">
+    <div className="border border-blue-200 rounded mb-2">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full px-4 py-3 text-left font-semibold bg-gray-50 hover:bg-gray-100 flex justify-between items-center"
+        className="w-full px-4 py-3 text-left font-bold text-white bg-blue-800 hover:bg-blue-800 flex items-center text-lg"
       >
-        {title}
-        <span className="text-gray-500">{isOpen ? '▼' : '▶'}</span>
+        <span className="mr-4 text-white">{isOpen ? '▼' : '▶'}</span>
+          {title}
       </button>
       {isOpen && <div className="p-4">{children}</div>}
     </div>
