@@ -5,6 +5,7 @@ import { Home } from './components/Home';
 import { Services } from './components/Services';
 import { About } from './components/About';
 import { CSR } from './components/csr';
+import { Gallery } from './components/Gallery';
 import { BackToTop } from './components/ui/arrowup';
 
 // Define the possible views
@@ -27,7 +28,7 @@ function App() {
       case 'announcements':
         return <div className="min-h-screen flex items-center justify-center p-8"><h1 className="text-4xl font-bold text-blue-900">Announcements - Coming Soon</h1></div>;
       case 'images':
-        return <div className="min-h-screen flex items-center justify-center p-8"><h1 className="text-4xl font-bold text-blue-900">Gallery - Coming Soon</h1></div>;
+        return <Gallery />;
       case 'news':
         return <div className="min-h-screen flex items-center justify-center p-8"><h1 className="text-4xl font-bold text-blue-900">Latest News - Coming Soon</h1></div>;
       case 'about':
@@ -44,8 +45,7 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header currentView={activeView} onNavigate={navigateTo} />
-      {/* Changed flex-grow to grow to fix the Tailwind warning */}
-      <main className="grow">
+      <main className={`grow ${activeView === 'home' ? '' : 'bg-blue-100'}`}>
         {renderView()}
       </main>
       <Footer />

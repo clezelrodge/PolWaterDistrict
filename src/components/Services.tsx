@@ -5,7 +5,7 @@ import { FileText, CreditCard, FileCheck, TrendingUp, Droplets } from 'lucide-re
 
 export function Services() {
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
+    <div className="min-h-screen py-12">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-blue-900 mb-4">Citizen Services</h1>

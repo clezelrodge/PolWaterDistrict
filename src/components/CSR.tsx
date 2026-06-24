@@ -2,7 +2,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 export function CSR() {
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
+    <div className="min-h-screen py-12">
       <div className="container mx-auto px-16">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-blue-900 mb-4">Corporate Social Responsibility</h1>
@@ -25,8 +25,8 @@ export function CSR() {
   <table className="min-w-full bg-white border border-gray-200 rounded-lg">
     <thead>
       <tr className="bg-blue-800 text-white">
-        <th className="px-6 py-3 text-2xl text-center font-bold">Year</th>
-        <th className="px-6 py-3 text-2xl text-center font-bold">Recipient</th>
+        <th className="px-6 py-3 text-xl text-center font-bold">Year</th>
+        <th className="px-6 py-3 text-xl text-center font-bold">Recipient</th>
       </tr>
     </thead>
     <tbody>
