@@ -42,15 +42,15 @@ const HistoryAccordion: React.FC = () => {
       </AccordionItem>
 
       <AccordionItem title="1995-1996">
-        <p className="text-lg text-gray-700">Implemented the Phase II Expansion & Improvement Project. An ADB/LWUA Project worth P68.221M for the construction of 5 deep wells located at Brgy. Sulit, Pagalungan, Cannery and Polo, installation of vertical turbine pumps including electro-mechanical components such as motor pumps and providing a stand-by diesel engine and provision for replacement parts and installation of various sizes of pipes for transmission and distribution lines.</p>
+        <p className="text-lg text-gray-700">Implemented the Phase II Expansion and Improvement Project. An ADB/LWUA Project worth P68.221M for the construction of 5 deep wells located at Brgy. Sulit, Pagalungan, Cannery and Polo, installation of vertical turbine pumps including electro-mechanical components such as motor pumps and providing a stand-by diesel engine and provision for replacement parts and installation of various sizes of pipes for transmission and distribution lines.</p>
       </AccordionItem>
 
       <AccordionItem title="2007-2008">
-        <p className="text-lg text-gray-700">Appointment of Engr. Andresito J. Degilla as 2nd General Manager of Polomolok WD. Implemented the Phase III Expansion & Rehabilitation and Improvement Project worth P34.4M covering 15 new Subdivisions within the Polomolok WD service area including the construction of additional deep well at Brgy. Upper Klinan.</p>
+        <p className="text-lg text-gray-700">Appointment of Engr. Andresito J. Degilla as 2nd General Manager of Polomolok WD. Implemented the Phase III Expansion and Rehabilitation and Improvement Project worth P34.4M covering 15 new Subdivisions within the Polomolok WD service area including the construction of additional deep well at Brgy. Upper Klinan.</p>
       </AccordionItem>
 
       <AccordionItem title="2009">
-        <p className="text-lg text-gray-700">Utilized savings of P5M from Phase III Project for the expansion & rehabilitation of mainline going to Silway-8 to increase pressure. The same year, Polomolok WD was recategorized from Average Water District to Medium Water District.</p>
+        <p className="text-lg text-gray-700">Utilized savings of P5M from Phase III Project for the expansion and rehabilitation of mainline going to Silway-8 to increase pressure. The same year, Polomolok WD was recategorized from Average Water District to Medium Water District.</p>
       </AccordionItem>
     </div>
   );
@@ -175,7 +175,7 @@ const FunctionsAccordion: React.FC = () => {
       </div>
       <div className="flex items-start gap-2 mt-2">
         <Dot size={26} className="mt-2" />
-        <p className="text-lg text-justify text-gray-700">Procurement, Personnel and Gen. Services ( 3 Sections).</p>
+        <p className="text-lg text-justify text-gray-700">Procurement, Personnel, and Gen. Services ( 3 Sections).</p>
       </div>
       </AccordionItem>
 
@@ -198,12 +198,43 @@ const FunctionsAccordion: React.FC = () => {
         </div>
         <div className="flex items-start gap-2 mt-2">
           <Dot size={26} className="mt-2" />
-          <p className="text-lg text-justify text-gray-700">Cash, Budget & Accounting Services ( 3 Sections)</p>
+          <p className="text-lg text-justify text-gray-700">Cash, Budget, and Accounting Services ( 3 Sections)</p>
         </div>
       </AccordionItem>
 
-      <AccordionItem title="Cash, Budget & Accounting Services ( 3 Sections)">
-        
+      <AccordionItem title="Engineering and Operations Division">
+        <div className="flex items-start gap-2 mt-2">
+          <Dot size={36} className="mt-2" />
+          <p className="text-lg text-justify text-gray-700">Determines water production requirements and ensures the steady supply of water to the service area;</p>
+        </div>
+        <div className="flex items-start gap-2 mt-2">
+          <Dot size={68} className="mt-2" />
+          <p className="text-lg text-justify text-gray-700">Maintains water pumps and water treatment facilities and water quality in accordance with the standards set by the Philippine National Standards for Drinking Water and World Health Organization;</p>
+          </div>
+          <div className="flex items-start gap-2 mt-2">
+            <Dot size={28} className="mt-2" />
+            <p className="text-lg text-justify text-gray-700">Conducts preventive maintenance and repair of equipment and facilities.</p>
+          </div>
+          <div className="flex items-start gap-2 mt-2">
+          <Dot size={32} className="mt-2" />
+          <p className="text-lg text-justify text-gray-700">Initiates programs for protection and development of water resources and watershed areas.</p>
+          </div>
+          <div className="flex items-start gap-2 mt-2">
+            <Dot size={70} className="mt-2" />
+            <p className="text-lg text-justify text-gray-700">Implements programs for extension, expansion, and improvement of water supply system and undertakes repair and maintenance of transmission and distribution pipelines, including appurtenances.</p>
+          </div>
+          <div className="flex items-start gap-2 mt-2">
+            <Dot size={34} className="mt-2" />
+            <p className="text-lg text-justify text-gray-700">Formulates and implements corrective maintenance of water meters and other measuring devices;</p>
+          </div>
+          <div className="flex items-start gap-2 mt-2">
+            <Dot size={42} className="mt-2" />
+            <p className="text-lg text-justify text-gray-700">Plans and designs mainline extension, including mainline improvement, water supply system, pumping facilities and other structures.</p>
+          </div>
+          <div className="flex items-start gap-2 mt-2">
+            <Dot size={24} className="mt-2" />
+            <p className="text-lg text-justify text-gray-700">Production and Construction, and Maintenance Services (2 Sections).</p>
+          </div>
       </AccordionItem>
     </div>
   );
@@ -214,7 +245,7 @@ export function About() {
     return (
         <div>
             <div className="min-h-screen bg-gray-50 py-12">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-16">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-blue-900 mb-4">About Us</h1>
           <p className="text-gray-600 max-w-2xl mx-auto mb-12">

@@ -4,6 +4,7 @@ import { Footer } from './components/layout/Footer';
 import { Home } from './components/Home';
 import { Services } from './components/Services';
 import { About } from './components/About';
+import { CSR } from './components/csr';
 import { BackToTop } from './components/ui/arrowup';
 
 // Define the possible views
@@ -31,6 +32,8 @@ function App() {
         return <div className="min-h-screen flex items-center justify-center p-8"><h1 className="text-4xl font-bold text-blue-900">Latest News - Coming Soon</h1></div>;
       case 'about':
         return <About />;
+      case 'csr':
+        return <CSR />;
       case 'contact':
         return <div className="min-h-screen flex items-center justify-center p-8"><h1 className="text-4xl font-bold text-blue-900">Contact Page - Coming Soon</h1></div>;
       default:

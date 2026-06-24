@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
-
 import type { View } from '../../App';
 
 interface HeaderProps {
@@ -21,16 +20,13 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navItems: { label: string; value: View }[] = [
+  const navItems = [
     { label: 'Home', value: 'home' },
     { label: 'Services', value: 'services' },
     { label: 'About', value: 'about' },
     { label: 'CSR', value: 'csr' },
     { label: 'GAD', value: 'gad' },
-    { label: 'Watershed', value: 'watershed' },
-    { label: 'Sanitation Service', value: 'sanitation' },
     { label: 'HR', value: 'hr' },
-    { label: 'Trainings', value: 'trainings' },
   ];
 
   return (
@@ -38,7 +34,7 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
       className={`sticky top-0 z-50 w-full ${
         scrolled 
           ? 'bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-lg' 
-          : 'bg-transparent' // Completely transparent - hero image shows through
+          : 'bg-transparent'
       }`}
     >
 
