@@ -128,3 +128,22 @@
     @apply font-sans;
     }
 }
+
+@keyframes wave-slow {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes wave-medium {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes wave-fast {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-wave-slow { animation: wave-slow 20s linear infinite; }
+.animate-wave-medium { animation: wave-medium 15s linear infinite; }
+.animate-wave-fast { animation: wave-fast 10s linear infinite; }

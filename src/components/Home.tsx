@@ -214,36 +214,140 @@ export function Home({ onNavigate }: HomeProps) {
 
             {/* Right Side - Online Services Panel */}
 
-            <Card className="bg-white/10 backdrop-blur-md border-white/20 text-white shadow-2xl">
-              <CardContent className="p-8">
-                <h2 className="text-3xl font-bold text-center mb-8 drop-shadow-md">Online Services</h2>
-                <div className="grid grid-cols-2 gap-4">
-                  {onlineServices.map((service, index) => (
-                    <button
-                      key={index}
-                      onClick={service.onClick}
-                      className="group flex flex-col items-center p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300 hover:scale-105 cursor-pointer"
-                    >
-                      <div className={`h-16 w-16 ${service.color} rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-lg`}>
-                        <service.icon className="h-8 w-8 text-white" />
-                      </div>
-                      <h3 className="text-sm font-semibold text-center leading-tight drop-shadow-sm">
+            {/* Right Side - Online Services Panel */}
+          <Card className="bg-white/10 backdrop-blur-md border-white/20 text-white shadow-2xl">
+            <CardContent className="p-8">
+              <h2 className="text-3xl font-bold text-center mb-8 drop-shadow-md">Online Services</h2>
+              <div className="flex flex-col gap-4">
+                {onlineServices.map((service, index) => (
+                  <button
+                    key={index}
+                    onClick={service.onClick}
+                    className="group relative flex items-center p-4 rounded-xl bg-white/5 overflow-hidden transition-all duration-300 hover:scale-[1.02] cursor-pointer w-full text-left"
+                  >
+                    {/* Sliding Fill Background - Left to Right Animation */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600/90 to-blue-500/90 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300 ease-out" />
+                    
+                    {/* Content Container */}
+                    <div className="relative z-10 flex items-center w-full">
+                      <h3 className="text-base font-semibold drop-shadow-sm group-hover:drop-shadow-md transition-all">
                         {service.title}
                       </h3>
-                    </button>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+                      <ChevronRight className="ml-auto h-5 w-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
           </div>
         </div>
 
-        {/* Wave Divider */}
-        <div className="relative bottom-0 left-0 right-0 z-10 -mb-px">
-            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" className="block w-full">
-              <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V122H1380C1320 122 1200 122 1080 122C960 122 840 122 720 122C600 122 480 122 360 122C240 122 120 122 60 122H0Z" fill="white"/>
+      {/* Truly Infinite 3-Layer Wave - Seamlessly Looping */}
+      <div className="relative bottom-0 left-0 right-0 z-10 -mb-px leading-none overflow-hidden">
+        <div className="relative w-full h-32 md:h-48">
+
+          <div className="absolute inset-0 animate-wave-slow opacity-30">
+            <svg
+              viewBox="0 0 2880 200"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              className="block w-[200%] h-full"
+            >
+              <path
+                d="M0,100 
+                  C240,60 480,60 720,100 
+                  C960,140 1200,140 1440,100 
+                  C1680,60 1920,60 2160,100 
+                  C2400,140 2640,140 2880,100 
+                  L2880,200 L0,200 Z"
+                fill="white"
+              />
             </svg>
           </div>
+
+
+          <div className="absolute inset-0 animate-wave-medium opacity-60">
+            <svg
+              viewBox="0 0 2880 200"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              className="block w-[200%] h-full"
+            >
+              <path
+                d="M0,120 
+                  C120,90 240,90 360,120 
+                  C480,150 600,150 720,120 
+                  C840,90 960,90 1080,120 
+                  C1200,150 1320,150 1440,120 
+                  C1560,90 1680,90 1800,120 
+                  C1920,150 2040,150 2160,120 
+                  C2280,90 2400,90 2520,120 
+                  C2640,150 2760,150 2880,120 
+                  L2880,200 L0,200 Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+
+
+          <div className="absolute inset-0 animate-wave-fast">
+            <svg
+              viewBox="0 0 2880 200"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              className="block w-[200%] h-full"
+            >
+              <path
+                d="M0,140 
+                  C80,115 160,115 240,140 
+                  C320,165 400,165 480,140 
+                  C560,115 640,115 720,140 
+                  C800,165 880,165 960,140 
+                  C1040,115 1120,115 1200,140 
+                  C1280,165 1360,165 1440,140 
+                  C1520,115 1600,115 1680,140 
+                  C1760,165 1840,165 1920,140 
+                  C2000,115 2080,115 2160,140 
+                  C2240,165 2320,165 2400,140 
+                  C2480,115 2560,115 2640,140 
+                  C2720,165 2800,165 2880,140 
+                  L2880,200 L0,200 Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <style jsx>{`
+          @keyframes wave-slow {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          @keyframes wave-medium {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          @keyframes wave-fast {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+
+          .animate-wave-slow {
+            animation: wave-slow 25s linear infinite;
+            will-change: transform;
+          }
+          .animate-wave-medium {
+            animation: wave-medium 18s linear infinite;
+            will-change: transform;
+          }
+          .animate-wave-fast {
+            animation: wave-fast 12s linear infinite;
+            will-change: transform;
+          }
+        `}</style>
+      </div>
+
         </div>
 
       {/* Quick Links Section */}

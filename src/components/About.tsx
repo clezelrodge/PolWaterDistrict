@@ -275,65 +275,87 @@ const FunctionsAccordion: React.FC = () => {
 
 
 export function About() {
-    return (
-        <div>
-            <div className="min-h-screen py-12">
-      <div className="container mx-auto px-16">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-blue-900 mb-4">About Us</h1>
-          <p className="text-gray-600 max-w-2xl mx-auto mb-12">
-            Discover more about Polomolok Water District.
-          </p>
-    <Tabs defaultValue="history" className="w-full">
-        <TabsList className="grid w-full max-w-6xl mx-auto grid-cols-4 mb-8">
-            <TabsTrigger value="history">History</TabsTrigger>
-            <TabsTrigger value="mv">Vision & Mission Statement</TabsTrigger>
-            <TabsTrigger value="qpso">Quality Policy Statement & Objectives</TabsTrigger>
-            <TabsTrigger value="mf">Mandates & Functions</TabsTrigger>
-        </TabsList>
-
-    <TabsContent value="history">
-        <Card>
-            <CardContent className="justify-center">
-              <p className="text-justify">
-              </p>
-              <HistoryAccordion />
-            </CardContent>
-        </Card>
-    </TabsContent>
-
-    <TabsContent value="mv">
-        <Card>
-            <CardContent className="flex flex-col items-center justify-center py-8">
-                <h2 className="text-3xl text-blue-800 font-bold mb-6">Vision and Mission Statement</h2>
-                <img src="/vms.png" alt="Vision and Mission" className="max-w-full h-auto" />
-            </CardContent>
-        </Card>
-    </TabsContent>
-    <TabsContent value="qpso">
-        <Card>
-            <CardContent className="flex flex-col items-center justify-center py-8">
-              <h2 className="text-3xl text-blue-800 font-bold mb-6">Quality Policy Statement and Objectives</h2>
-              <img src="/Quality_statement.png" alt="Quality Policy Statement and Objectives" className="max-w-full h-auto" />
-            </CardContent>
-        </Card>
-    </TabsContent>
-    <TabsContent value="mf">
-        <Card>
-            <CardContent className="justify-center">
-              <MandatesAccordion />
-              <div className="mt-8">
-                <FunctionsAccordion />
-              </div>
-            </CardContent>
-        </Card>
-    </TabsContent>
-
-    </Tabs>
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {/* Hero Section with Background Image */}
+      <div 
+        className="relative -mt-[80px]" 
+        style={{
+          backgroundImage: `url('/background.jpg')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center top',
+          backgroundAttachment: 'fixed'
+        }}
+      >
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-950/80 via-blue-900/70 to-blue-950/80 z-0" />
+        
+        {/* Content Container - Header Only */}
+        <div className="container mx-auto px-4 py-20 lg:py-28 relative z-10">
+          <div className="text-center">
+            <h1 className="text-4xl lg:text-5xl font-bold text-blue-100 mb-4 drop-shadow-lg">
+              About Us
+            </h1>
+            <p className="text-blue-100 max-w-2xl mx-auto text-lg drop-shadow-md">
+              Discover more about Polomolok Water District.
+            </p>
+          </div>
         </div>
-        </div>
-        </div>
-        </div>
-    );
 
-  }
+        
+
+      </div>
+
+      {/* Tabs Section - Outside the background image */}
+      <div className="container mx-auto px-4 py-12 pt-20">
+        <div className="max-w-6xl mx-auto -mt-16">
+          <Tabs defaultValue="history" className="w-full">
+            <TabsList className="grid w-full grid-cols-4 mb-8 bg-white shadow-lg border p-1">
+              <TabsTrigger value="history">History</TabsTrigger>
+              <TabsTrigger value="mv">Vision & Mission Statement</TabsTrigger>
+              <TabsTrigger value="qpso">Quality Policy Statement & Objectives</TabsTrigger>
+              <TabsTrigger value="mf">Mandates & Functions</TabsTrigger>
+            </TabsList>
+
+            <TabsContent value="history">
+              <Card className="shadow-xl">
+                <CardContent className="justify-center pt-6">
+                  <HistoryAccordion />
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            <TabsContent value="mv">
+              <Card className="shadow-xl">
+                <CardContent className="flex flex-col items-center justify-center py-8">
+                  <h2 className="text-3xl text-blue-800 font-bold mb-6">Vision and Mission Statement</h2>
+                  <img src="/vms.png" alt="Vision and Mission" className="max-w-full h-auto" />
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            <TabsContent value="qpso">
+              <Card className="shadow-xl">
+                <CardContent className="flex flex-col items-center justify-center py-8">
+                  <h2 className="text-3xl text-blue-800 font-bold mb-6">Quality Policy Statement and Objectives</h2>
+                  <img src="/Quality_statement.png" alt="Quality Policy Statement and Objectives" className="max-w-full h-auto" />
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            <TabsContent value="mf">
+              <Card className="shadow-xl">
+                <CardContent className="justify-center pt-6">
+                  <MandatesAccordion />
+                  <div className="mt-8">
+                    <FunctionsAccordion />
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+          </Tabs>
+        </div>
+      </div>
+    </div>
+  );
+}
