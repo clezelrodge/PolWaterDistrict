@@ -147,3 +147,8 @@
 .animate-wave-slow { animation: wave-slow 20s linear infinite; }
 .animate-wave-medium { animation: wave-medium 15s linear infinite; }
 .animate-wave-fast { animation: wave-fast 10s linear infinite; }
+
+/* Override antd Collapse arrow color to white */
+.ant-collapse-expand-icon {
+  color: white !important;
+}

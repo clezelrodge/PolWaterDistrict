@@ -208,7 +208,7 @@ export function Home({ onNavigate }: HomeProps) {
             {/* Right Side - Online Services Panel */}
           <Card className="bg-white/10 backdrop-blur-md border-white/20 text-white shadow-3xl">
             <CardContent className="p-8">
-              <h2 className="text-3xl font-bold text-center mb-2 drop-shadow-md">Online Services</h2>
+              <h2 className="text-3xl font-bold text-center mb-8 drop-shadow-md">Online Services</h2>
               <div className="flex flex-col gap-4">
                 {onlineServices.map((service, index) => (
                   <button
@@ -217,7 +217,7 @@ export function Home({ onNavigate }: HomeProps) {
                     className="group relative flex items-center p-4 rounded-xl bg-white/5 overflow-hidden transition-all duration-300 hover:scale-[1.02] cursor-pointer w-full text-left"
                   >
                     {/* Sliding Fill Background - Left to Right Animation */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600/90 to-blue-500/90 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300 ease-out" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600/90 to-blue-500/90 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-600 ease-out" />
                     
                     {/* Content Container */}
                     <div className="relative z-10 flex items-center w-full">
