@@ -7,7 +7,8 @@ import { About } from './components/About';
 import { CSR } from './components/csr';
 import { Gallery } from './components/Gallery';
 import { BackToTop } from './components/ui/arrowup';
-import { GAD } from './components/GAD';
+// App.tsx
+import GAD from './components/GAD';  // ✅ Default import (no curly braces)
 
 // Define the possible views
 export type View = 'home' | 'services' | 'about' | 'csr' | 'gad' | 'hr';

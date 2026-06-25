@@ -3,6 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 
+
 export default function GAD() {  // Must start with uppercase
   return (
     <div className="space-y-6 p-6">
@@ -31,7 +32,7 @@ export default function GAD() {  // Must start with uppercase
               <CardTitle>Media Gallery</CardTitle>
             </CardHeader>
             <CardContent>
-              <Images 
+              <img 
                 src="/polwd_GAD.jpg" 
                 alt="GAD Image" 
                 className="w-full max-w-md rounded-lg"
@@ -43,3 +44,4 @@ export default function GAD() {  // Must start with uppercase
     </div>
   );
 }
+
