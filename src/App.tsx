@@ -7,9 +7,10 @@ import { About } from './components/About';
 import { CSR } from './components/csr';
 import { Gallery } from './components/Gallery';
 import { BackToTop } from './components/ui/arrowup';
+import { GAD } from './components/GAD';
 
 // Define the possible views
-export type View = 'home' | 'services' | 'about' | 'contact' | 'announcements' | 'images' | 'news' | 'lib' | 'csr' | 'gad' | 'watershed' | 'sanitation' | 'hr' | 'trainings';
+export type View = 'home' | 'services' | 'about' | 'csr' | 'gad' | 'hr';
 
 function App() {
   const [activeView, setActiveView] = useState<View>('home');
@@ -35,6 +36,8 @@ function App() {
         return <About />;
       case 'csr':
         return <CSR />;
+      case 'GAD':  // 
+        return <GAD />;
       case 'contact':
         return <div className="min-h-screen flex items-center justify-center p-8"><h1 className="text-4xl font-bold text-blue-900">Contact Page - Coming Soon</h1></div>;
       default:

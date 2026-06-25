@@ -25,7 +25,7 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
     { label: 'Services', value: 'services' },
     { label: 'About', value: 'about' },
     { label: 'CSR', value: 'csr' },
-    { label: 'GAD', value: 'gad' },
+    { label: 'GAD', value: 'GAD' },
     { label: 'HR', value: 'hr' },
   ];
 

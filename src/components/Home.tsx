@@ -58,34 +58,26 @@ export function Home({ onNavigate }: HomeProps) {
       observer2.disconnect();
     };
   }, []);
-    //Online Services (To be Changed or Edit)
+
   const onlineServices = [
     {
-      icon: Megaphone,
       title: 'Announcements',
       description: 'Maintenance Repair Announcements',
-      color: 'bg-red-500',
       onClick: () => onNavigate('announcements')
     },
     {
-      icon: Images,
       title: 'Gallery',
       description: 'View photos of PolWD',
-      color: 'bg-green-500',
       onClick: () => onNavigate('images')
     },
     {
-      icon: Newspaper,
       title: 'Latest News',
       description: 'News relating the PolWD',
-      color: 'bg-gray-500',
       onClick: () => onNavigate('news')
     },
     {
-      icon: Library,
       title: 'E-Library',
       description: 'Republic Acts and  Advocacy Materials',
-      color: 'bg-orange-500',
       onClick: () => onNavigate('lib')
     }
   ];
@@ -175,22 +167,22 @@ export function Home({ onNavigate }: HomeProps) {
         <div className="container mx-auto px-4 py-20 lg:py-28 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
 
-            {/* Left Side - Logo Collage */}
+            {/* Left Side - Logo */}
 
             <div className="text-center lg:text-left">
-              <h1 className="text-4xl lg:text-5xl text-blue-100 font-bold mb-4 drop-shadow-lg">
+              <h1 className="text-4xl lg:text-5xl text-white font-bold mb-4 drop-shadow-lg">
                 Every Drop Counts!
               </h1>
-              <h2 className="text-2xl lg:text-3xl text-blue-100 font-semibold mb-4 drop-shadow-lg">
+              <h2 className="text-2xl lg:text-3xl text-white font-semibold mb-4 drop-shadow-lg">
                 WE CARE Because You Deserve The BEST.
               </h2>
-              <h3 className="text-xl text-blue-100 drop-shadow-md">
+              <h3 className="text-xl text-white drop-shadow-md">
                 Text your concerns to our AGAS Patrol.
                 </h3>
-              <h4 className="text-xl text-blue-100 drop-shadow-md">
+              <h4 className="text-xl text-white drop-shadow-md">
                Text: "AGAS (your name) (your address) (your concern)"
               </h4>
-              <h5 className="text-xl text-blue-100 mb-8 drop-shadow-md">
+              <h5 className="text-xl text-white mb-8 drop-shadow-md">
                 Send to 0917 700 5248
               </h5>
               <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
@@ -212,12 +204,11 @@ export function Home({ onNavigate }: HomeProps) {
               </div>
             </div>
 
-            {/* Right Side - Online Services Panel */}
 
             {/* Right Side - Online Services Panel */}
-          <Card className="bg-white/10 backdrop-blur-md border-white/20 text-white shadow-2xl">
+          <Card className="bg-white/10 backdrop-blur-md border-white/20 text-white shadow-3xl">
             <CardContent className="p-8">
-              <h2 className="text-3xl font-bold text-center mb-8 drop-shadow-md">Online Services</h2>
+              <h2 className="text-3xl font-bold text-center mb-2 drop-shadow-md">Online Services</h2>
               <div className="flex flex-col gap-4">
                 {onlineServices.map((service, index) => (
                   <button
@@ -242,8 +233,7 @@ export function Home({ onNavigate }: HomeProps) {
           </Card>
           </div>
         </div>
-
-      {/* Truly Infinite 3-Layer Wave - Seamlessly Looping */}
+                // wave //
       <div className="relative bottom-0 left-0 right-0 z-10 -mb-px leading-none overflow-hidden">
         <div className="relative w-full h-32 md:h-48">
 

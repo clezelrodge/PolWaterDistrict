@@ -10,9 +10,9 @@ export function Gallery() {
             View photos and images of Polomolok Water District
           </p>
         </div>
-        <Collapse accordion>
-          <Panel header="Board of Directors" key="1">
-            <p className="text-gray-700">Board of Directors content goes here</p>
+        <Collapse accordion className="border-blue-200 bg-white">
+          <Panel header={<span className="text-xl text-blue-800">Board of Directors</span>} key="1">
+            <p className="text-lg text-gray-700">Board of Directors content goes here</p>
           </Panel>
         </Collapse>
       </div>
