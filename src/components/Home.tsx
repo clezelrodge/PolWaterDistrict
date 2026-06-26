@@ -229,10 +229,11 @@ export function Home({ onNavigate }: HomeProps) {
           </Card>
           </div>
         </div>
-                // wave //
-      <div className="relative bottom-0 left-0 right-0 z-10 -mb-px leading-none overflow-hidden">
-        <div className="relative w-full h-32 md:h-48">
 
+      {/* WAVE SECTION - Positioned at the bottom of hero */}
+      <div className="relative bottom-0 left-0 right-0 z-10 leading-none overflow-hidden -mb-1">
+        <div className="relative w-full h-20 md:h-32">
+          {/* Wave 1 - Slow */}
           <div className="absolute inset-0 animate-wave-slow opacity-30">
             <svg
               viewBox="0 0 2880 200"
@@ -247,12 +248,12 @@ export function Home({ onNavigate }: HomeProps) {
                   C1680,60 1920,60 2160,100 
                   C2400,140 2640,140 2880,100 
                   L2880,200 L0,200 Z"
-                fill="white"
+                fill="#ffffff"
               />
             </svg>
           </div>
 
-
+          {/* Wave 2 - Medium */}
           <div className="absolute inset-0 animate-wave-medium opacity-60">
             <svg
               viewBox="0 0 2880 200"
@@ -271,12 +272,12 @@ export function Home({ onNavigate }: HomeProps) {
                   C2280,90 2400,90 2520,120 
                   C2640,150 2760,150 2880,120 
                   L2880,200 L0,200 Z"
-                fill="white"
+                fill="#ffffff"
               />
             </svg>
           </div>
 
-
+          {/* Wave 3 - Fast */}
           <div className="absolute inset-0 animate-wave-fast">
             <svg
               viewBox="0 0 2880 200"
@@ -299,39 +300,11 @@ export function Home({ onNavigate }: HomeProps) {
                   C2480,115 2560,115 2640,140 
                   C2720,165 2800,165 2880,140 
                   L2880,200 L0,200 Z"
-                fill="white"
+                fill="#ffffff"
               />
             </svg>
           </div>
         </div>
-
-        <style jsx>{`
-          @keyframes wave-slow {
-            0%   { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-          }
-          @keyframes wave-medium {
-            0%   { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-          }
-          @keyframes wave-fast {
-            0%   { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-          }
-
-          .animate-wave-slow {
-            animation: wave-slow 25s linear infinite;
-            will-change: transform;
-          }
-          .animate-wave-medium {
-            animation: wave-medium 18s linear infinite;
-            will-change: transform;
-          }
-          .animate-wave-fast {
-            animation: wave-fast 12s linear infinite;
-            will-change: transform;
-          }
-        `}</style>
       </div>
 
       </div>
