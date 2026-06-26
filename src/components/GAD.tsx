@@ -31,7 +31,6 @@ export default function GAD() {
           </div>
         </div>
 
-
         {/* WAVE SECTION - Positioned at the bottom of hero */}
         <div className="relative bottom-0 left-0 right-0 z-10 leading-none overflow-hidden -mb-1">
           <div className="relative w-full h-20 md:h-32">
@@ -159,7 +158,7 @@ export default function GAD() {
                                         <img src="/GAD2024_3.jpg" alt="GAD Focal Point System 2024" className="max-w-181 h-auto" />
                                         <img src="/GAD2024_4.jpg" alt="GAD Focal Point System 2024" className="max-w-181 h-auto" />
                                     </div>                
-                                         )
+                                )
                               },
                               {
                                 key: '1-3',
@@ -269,55 +268,52 @@ export default function GAD() {
                                   <div className="mx-4 text-lg font-bold">Gender Mainstreaming</div>
                                 ),
                                 children: (
-                                 <div className="flex flex-col items-center font-semibold text-2xl gap-4 mt-6 mb-6">
-                                    Gender equality as the goal; gender mainstreaming as the strategy.
-                                    <div className="gap-4 mt-2 mb-2"></div>
+                                  <div className="flex flex-col items-center font-semibold text-2xl gap-4 mt-6 mb-6">
+                                    <p>Gender equality as the goal; gender mainstreaming as the strategy.</p>
                                     <img src="/GADGM.png" alt="Gender Mainstreaming" className="max-w-181 h-auto" />
-                                    <div className="items-center text-2xl gap-4 mt-6 mb-6">
-                                      Entry Points of Gender Mainstreaming
-                                    </div>
+                                    
+                                    <h3 className="text-2xl mt-6 mb-6">Entry Points of Gender Mainstreaming</h3>
                                     <div className="grid grid-cols-2 gap-4 mt-4 mb-4">
                                       <img src="/Policies.png" alt="Policies" className="max-w-181 h-auto" />
                                       <img src="/People.png" alt="People" className="max-w-181 h-auto" />
                                       <img src="/PAPs.png" alt="PAPs" className="max-w-181 h-auto" />
                                       <img src="/EM.png" alt="Enabling Mechanisms" className="max-w-181 h-auto" />
                                     </div>
-                                    <div className="flex flex-col items-center text-center text-2xl gap-4 mt-6 mb-6">
-                                      Levels
-                                      <img src="/GADlvl.png" alt="GAD Levels" className="max-w-181 h-auto" />
-                                      <div className="grid grid-cols-2 gap-4 mt-4 mb-4">
-                                        <img src="lv1.png" alt="GAD Level 1" className="max-w-181 h-auto" />
-                                        <img src="lv2.png" alt="GAD Level 2" className="max-w-181 h-auto" />
-                                        <img src="lv3.png" alt="GAD Level 3" className="max-w-181 h-auto" />
-                                        <img src="lv4.png" alt="GAD Level 4" className="max-w-181 h-auto" />
-                                      </div>
-                                      <div className="flex flex-col items-center text-center">
-                                        <img src="lv5.png" alt="GAD Level 5" className="max-w-181 h-auto" />
-                                        </div>
+                                    
+                                    <h3 className="text-2xl mt-6 mb-6">Levels</h3>
+                                    <img src="/GADlvl.png" alt="GAD Levels" className="max-w-181 h-auto" />
+                                    <div className="grid grid-cols-2 gap-4 mt-4 mb-4">
+                                      <img src="lv1.png" alt="GAD Level 1" className="max-w-181 h-auto" />
+                                      <img src="lv2.png" alt="GAD Level 2" className="max-w-181 h-auto" />
+                                      <img src="lv3.png" alt="GAD Level 3" className="max-w-181 h-auto" />
+                                      <img src="lv4.png" alt="GAD Level 4" className="max-w-181 h-auto" />
                                     </div>
-                                    <div className="flex flex-col items-center text-center text-2xl gap-4 mt-6 mb-6">
-                                      Polomolok Water District's Levels of GMEF - Scoresheet
-                                        // ... inside the "Gender Mainstreaming" children section
-<div className="flex flex-col items-center gap-4">
-  <div className="flex items-center gap-2 w-full">
-    <FileText className="w-5 h-5 text-gray-800" />
-    <a href="/GMEF2021.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline cursor-pointer">
-      2021 Level 3 (PDF)
-    </a>
-  </div>
-  <div className="flex items-center gap-2 w-full">
-    <FileText className="w-5 h-5 text-gray-800" />
-    <a href="/GMEF2020.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline cursor-pointer">
-      2020 Level 3 (PDF)
-    </a>
-  </div>
-  <div className="flex items-center gap-2 w-full">
-    <FileText className="w-5 h-5 text-gray-800" />
-    <a href="/GMEF2018.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline cursor-pointer">
-      2018 Level 2 (PDF)
-    </a>
-  </div>
-</div>
+                                    <img src="lv5.png" alt="GAD Level 5" className="max-w-181 h-auto" />
+                                    
+                                    <h3 className="text-2xl mt-6 mb-6">Polomolok Water District's Levels of GMEF - Scoresheet</h3>
+                                    <div className="flex flex-col items-center gap-4">
+                                      <div className="flex items-center gap-2 w-full">
+                                        <FileText className="w-5 h-5 text-gray-800" />
+                                        <a href="/GMEF2021.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline cursor-pointer">
+                                          2021 Level 3 (PDF)
+                                        </a>
+                                      </div>
+                                      <div className="w-full border-t border-gray-300" />
+                                      <div className="flex items-center gap-2 w-full">
+                                        <FileText className="w-5 h-5 text-gray-800" />
+                                        <a href="/GMEF2020.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline cursor-pointer">
+                                          2020 Level 3 (PDF)
+                                        </a>
+                                      </div>
+                                      <div className="w-full border-t border-gray-300" />
+                                      <div className="flex items-center gap-2 w-full">
+                                        <FileText className="w-5 h-5 text-gray-800" />
+                                        <a href="/GMEF2018.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline cursor-pointer">
+                                          2018 Level 2 (PDF)
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
                                 ),
                               },
                               {
