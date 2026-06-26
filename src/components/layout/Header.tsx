@@ -66,7 +66,7 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
               <button
                 key={item.value}
                 onClick={() => onNavigate(item.value)}
-                className={`px-4 py-2 text-sm font-medium rounded-md transition-all duration-300 ${
+                className={`px-4 py-2 text-sm font-medium rounded-md transition-all duration-300 cursor-pointer ${
                   scrolled
                     ? (currentView === item.value
                         ? 'text-blue-700 bg-blue-50'
@@ -83,7 +83,7 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
 
           {/* Mobile Menu Button */}
           <button
-            className={`lg:hidden p-2 transition-colors ${
+            className={`lg:hidden p-2 transition-colors cursor-pointer ${
               scrolled 
                 ? 'text-gray-700' 
                 : 'text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)]'
@@ -109,7 +109,7 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
                     onNavigate(item.value);
                     setMobileMenuOpen(false);
                   }}
-                  className={`px-4 py-3 text-left text-sm font-medium rounded-md transition-colors ${
+                  className={`px-4 py-3 text-left text-sm font-medium rounded-md transition-colors cursor-pointer ${
                     scrolled
                       ? (currentView === item.value
                           ? 'text-blue-700 bg-blue-50'

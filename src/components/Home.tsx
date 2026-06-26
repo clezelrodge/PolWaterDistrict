@@ -4,9 +4,6 @@ import { Button } from '@/components/ui/button';
 import type { View } from '../App';
 
 import {
-  Images,
-  Megaphone,
-  Newspaper,
   Droplets,
   TrendingUp,
   Users,
@@ -15,7 +12,6 @@ import {
   ArrowRight,
   FileText,
   Download,
-  Library,
   Trophy,
 } from 'lucide-react';
 

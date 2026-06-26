@@ -1,67 +1,8 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { Collapse, Panel } from '@/components/ui/Accordion';
-import { Carousel, Tabs } from 'antd';    
+import { Tabs } from 'antd';    
+import { FileText } from 'lucide-react';
 
 export default function GAD() {
-  const galleryImages = [
-    {
-      id: 1,
-      src: "/law.jpg",
-      alt: "GAD Laws 1",
-    },
-    {
-      id: 2,
-      src: "/law1.jpg",
-      alt: "GAD Laws 2",
-    },
-    {
-      id: 3,
-      src: "/law2.jpg",
-      alt: "GAD Laws 3",
-    },
-    {
-      id: 4,
-      src: "/gad_element.jpg",
-      alt: "GAD Essential Elements in Planning and Budgeting",
-    },
-    {
-      id: 5,
-      src: "/gad_element1.jpg",
-      alt: "GAD Essential Elements in Planning and Budgeting",
-    },
-    {
-      id: 6,
-      src: "/gad_element2.jpg",
-      alt: "GAD Essential Elements in Planning and Budgeting",
-    },
-    {
-      id: 7,
-      src: "/gad_element3.jpg",
-      alt: "GAD Essential Elements in Planning and Budgeting",
-    }
-  ];
-
-
-  const carouselSettings = {
-    arrows: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    adaptiveHeight: true,
-    dots: true,
-    draggable: true,
-    fade: false,
-    infinite: true,
-    speed: 500,
-    easing: "ease-in-out",
-    effect: "scrollx",
-    waitForAnimate: true,
-    afterChange: (current) => {
-      console.log(`Current slide: ${current}`);
-    },
-    beforeChange: (current, next) => {
-      console.log(`Changing from slide ${current} to ${next}`);
-    }
-  };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -178,7 +119,11 @@ export default function GAD() {
                 items={[
                   {
                     key: '1',
-                    label: 'Tab 1',
+                    label: (
+                      <div className="text-lg font-bold">
+                        Focal Point System
+                      </div>
+                    ),
                     children: (
                       <Card className="shadow-xl">
                         <CardContent className="p-6">
@@ -187,18 +132,77 @@ export default function GAD() {
                             items={[
                               {
                                 key: '1-1',
-                                label: 'Subtab 1',
-                                children: <p className="text-gray-700">Placeholder content for Tab 1 - Subtab 1</p>,
+                                label: (
+                                    <div className="mx-4 text-lg font-bold">2025</div>
+                                ),
+                                children: (
+                                  <div className="flex flex-col items-center gap-4">
+                                    <img src="/GAD2025.jpg" alt="GAD Focal Point System 2025" className="max-w-full h-auto" />
+                                    <img src="/GAD2025_1.jpg" alt="GAD Focal Point System 2025" className="max-w-full h-auto" />
+                                  </div>
+                                ),
                               },
                               {
                                 key: '1-2',
-                                label: 'Subtab 2',
-                                children: <p className="text-gray-700">Placeholder content for Tab 1 - Subtab 2</p>,
+                                label: (
+                                  <div className="mx-4 text-lg font-bold">
+                                    2024
+                                  </div>
+                                ),
+                                children: (
+                                    <div className="flex flex-col items-center gap-4">
+                                        <img src="/GAD2024_1.jpg" alt="GAD Focal Point System 2024" className="max-w-181 h-auto" />
+                                        <img src="/GAD2024_2.jpg" alt="GAD Focal Point System 2024" className="max-w-181 h-auto" />
+                                        <img src="/GAD2024_3.jpg" alt="GAD Focal Point System 2024" className="max-w-181 h-auto" />
+                                        <img src="/GAD2024_4.jpg" alt="GAD Focal Point System 2024" className="max-w-181 h-auto" />
+                                    </div>                
+                                         )
                               },
                               {
                                 key: '1-3',
-                                label: 'Subtab 3',
-                                children: <p className="text-gray-700">Placeholder content for Tab 1 - Subtab 3</p>,
+                                label: (
+                                  <div className="mx-4 text-lg font-bold">
+                                    Office Order for the Creation of GFPS
+                                  </div>
+                                ),
+                                children: (
+                                  <div className="flex flex-col items-center gap-4">
+                                    <div className="flex items-center gap-2 w-full">
+                                      <FileText className="w-5 h-5 text-gray-800" />
+                                      <a href="/GFPS-23.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline cursor-pointer">
+                                        GFPS 2023 (PDF)
+                                      </a>
+                                    </div>
+                                    <div className="w-full border-t border-gray-300" />
+                                    <div className="flex items-center gap-2 w-full">
+                                      <FileText className="w-5 h-5 text-gray-800" />
+                                      <a href="/GFPS-22.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline cursor-pointer">
+                                        GFPS 2022 (PDF)
+                                      </a>
+                                    </div>
+                                    <div className="w-full border-t border-gray-300" />
+                                    <div className="flex items-center gap-2 w-full">
+                                      <FileText className="w-5 h-5 text-gray-800" />
+                                      <a href="/GFPS-21.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline cursor-pointer">
+                                        GFPS 2021 (PDF)
+                                      </a>
+                                    </div>
+                                    <div className="w-full border-t border-gray-300" />
+                                    <div className="flex items-center gap-2 w-full">
+                                      <FileText className="w-5 h-5 text-gray-800" />
+                                      <a href="/GFPS-20.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline cursor-pointer">
+                                        GFPS 2020 (PDF)
+                                      </a>
+                                    </div>
+                                    <div className="w-full border-t border-gray-300" />
+                                    <div className="flex items-center gap-2 w-full">
+                                      <FileText className="w-5 h-5 text-gray-800" />
+                                      <a href="/GFPS-19.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline cursor-pointer">
+                                        GFPS 2019 (PDF)
+                                      </a>
+                                    </div>
+                                  </div>
+                                ),
                               },
                             ]}
                           />
@@ -208,7 +212,9 @@ export default function GAD() {
                   },
                   {
                     key: '2',
-                    label: 'Tab 2',
+                    label: (
+                        <div className="mx-4 text-lg font-bold">GAD Strategic Framework</div>
+                    ),
                     children: (
                       <Card className="shadow-xl">
                         <CardContent className="p-6">
@@ -217,18 +223,25 @@ export default function GAD() {
                             items={[
                               {
                                 key: '2-1',
-                                label: 'Subtab 1',
-                                children: <p className="text-gray-700">Placeholder content for Tab 2 - Subtab 1</p>,
+                                label: (
+                                 <div className="mx-4 text-lg font-bold">Vision & Mission</div>
+                                  ),
+                                children: (
+                                    <div className="flex flex-col items-center gap-4">
+                                    <img src="/GAD_VM.jpg" alt="Vision and Mission" className="max-w-181 h-auto" />
+                                  </div>
+                                ),
                               },
                               {
                                 key: '2-2',
-                                label: 'Subtab 2',
-                                children: <p className="text-gray-700">Placeholder content for Tab 2 - Subtab 2</p>,
-                              },
-                              {
-                                key: '2-3',
-                                label: 'Subtab 3',
-                                children: <p className="text-gray-700">Placeholder content for Tab 2 - Subtab 3</p>,
+                                label: (
+                                <div className="mx-4 text-lg font-bold">Goals</div>
+                                ),
+                                children: (
+                                 <div className="flex flex-col items-center gap-4">
+                                    <img src="/GAD_Goals.png" alt="Goals" className="max-w-181 h-auto" />
+                                  </div>
+                                ),
                               },
                             ]}
                           />
@@ -238,7 +251,9 @@ export default function GAD() {
                   },
                   {
                     key: '3',
-                    label: 'Tab 3',
+                    label: (
+                      <div className="mx-4 text-lg font-bold">Gender Mainstreaming</div>
+                    ),
                     children: (
                       <Card className="shadow-xl">
                         <CardContent className="p-6">
@@ -247,8 +262,14 @@ export default function GAD() {
                             items={[
                               {
                                 key: '3-1',
-                                label: 'Subtab 1',
-                                children: <p className="text-gray-700">Placeholder content for Tab 3 - Subtab 1</p>,
+                                label: (
+                                  <div className="mx-4 text-lg font-bold">Gender Mainstreaming</div>
+                                ),
+                                children: (
+                                 <div className="flex flex-col items-center gap-4">
+                                    <img src="/GAD_Goals.png" alt="Goals" className="max-w-181 h-auto" />
+                                  </div>
+                                ),
                               },
                               {
                                 key: '3-2',
@@ -362,34 +383,6 @@ export default function GAD() {
           </CardContent>
         </Card>
       </div>
-
-      <style jsx>{`
-        @keyframes wave-slow {
-          0%   { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        @keyframes wave-medium {
-          0%   { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        @keyframes wave-fast {
-          0%   { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-
-        .animate-wave-slow {
-          animation: wave-slow 25s linear infinite;
-          will-change: transform;
-        }
-        .animate-wave-medium {
-          animation: wave-medium 18s linear infinite;
-          will-change: transform;
-        }
-        .animate-wave-fast {
-          animation: wave-fast 12s linear infinite;
-          will-change: transform;
-        }
-      `}</style>
     </div>
   );
 }

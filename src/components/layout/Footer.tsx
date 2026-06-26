@@ -18,10 +18,10 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm text-blue-100">
-              <li><button className="hover:text-white transition-colors">Online Services</button></li>
-              <li><button className="hover:text-white transition-colors">Bill Inquiry</button></li>
-              <li><button className="hover:text-white transition-colors">Water Interruptions</button></li>
-              <li><button className="hover:text-white transition-colors">Downloadable Forms</button></li>
+              <li><button className="hover:text-white transition-colors cursor-pointer">Online Services</button></li>
+              <li><button className="hover:text-white transition-colors cursor-pointer">Bill Inquiry</button></li>
+              <li><button className="hover:text-white transition-colors cursor-pointer">Water Interruptions</button></li>
+              <li><button className="hover:text-white transition-colors cursor-pointer">Downloadable Forms</button></li>
             </ul>
           </div>
 

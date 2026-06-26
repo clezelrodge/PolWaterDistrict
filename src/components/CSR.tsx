@@ -221,34 +221,6 @@ export function CSR() {
           </CardContent>
         </Card>
       </div>
-
-      <style jsx>{`
-        @keyframes wave-slow {
-          0%   { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        @keyframes wave-medium {
-          0%   { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        @keyframes wave-fast {
-          0%   { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-
-        .animate-wave-slow {
-          animation: wave-slow 25s linear infinite;
-          will-change: transform;
-        }
-        .animate-wave-medium {
-          animation: wave-medium 18s linear infinite;
-          will-change: transform;
-        }
-        .animate-wave-fast {
-          animation: wave-fast 12s linear infinite;
-          will-change: transform;
-        }
-      `}</style>
     </div>
   );
 }

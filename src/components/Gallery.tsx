@@ -1,6 +1,14 @@
-import { Collapse, Panel } from '@/components/ui/Accordion';
+import { Collapse } from 'antd';
 
 export function Gallery() {
+  const galleryItems = [
+    {
+      key: '1',
+      label: 'Board of Directors',
+      children: <p className="text-lg text-gray-700">Board of Directors content goes here</p>,
+    },
+  ];
+
   return (
     <div className="min-h-screen py-12">
       <div className="container mx-auto px-16">
@@ -10,11 +18,7 @@ export function Gallery() {
             View photos and images of Polomolok Water District
           </p>
         </div>
-        <Collapse accordion className="border-blue-200 bg-white">
-          <Panel header={<span className="text-xl text-blue-800">Board of Directors</span>} key="1">
-            <p className="text-lg text-gray-700">Board of Directors content goes here</p>
-          </Panel>
-        </Collapse>
+        <Collapse accordion defaultActiveKey={['1']} items={galleryItems} className="border-blue-200 bg-white" />
       </div>
     </div>
   );
