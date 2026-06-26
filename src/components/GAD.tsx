@@ -8,7 +8,7 @@ export default function GAD() {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section with Background Image */}
       <div 
-        className="relative" 
+        className="relative -mt-20" 
         style={{
           backgroundImage: `url('/background.jpg')`,
           backgroundSize: 'cover',
@@ -32,9 +32,10 @@ export default function GAD() {
         </div>
 
 
+        {/* WAVE SECTION - Positioned at the bottom of hero */}
         <div className="relative bottom-0 left-0 right-0 z-10 leading-none overflow-hidden -mb-1">
           <div className="relative w-full h-20 md:h-32">
-    
+            {/* Wave 1 - Slow */}
             <div className="absolute inset-0 animate-wave-slow opacity-30">
               <svg
                 viewBox="0 0 2880 200"
@@ -49,11 +50,12 @@ export default function GAD() {
                     C1680,60 1920,60 2160,100 
                     C2400,140 2640,140 2880,100 
                     L2880,200 L0,200 Z"
-                  fill="white"
+                  fill="#f9fafb"
                 />
               </svg>
             </div>
 
+            {/* Wave 2 - Medium */}
             <div className="absolute inset-0 animate-wave-medium opacity-60">
               <svg
                 viewBox="0 0 2880 200"
@@ -72,11 +74,12 @@ export default function GAD() {
                     C2280,90 2400,90 2520,120 
                     C2640,150 2760,150 2880,120 
                     L2880,200 L0,200 Z"
-                  fill="white"
+                  fill="#f9fafb"
                 />
               </svg>
             </div>
 
+            {/* Wave 3 - Fast */}
             <div className="absolute inset-0 animate-wave-fast">
               <svg
                 viewBox="0 0 2880 200"
@@ -99,7 +102,7 @@ export default function GAD() {
                     C2480,115 2560,115 2640,140 
                     C2720,165 2800,165 2880,140 
                     L2880,200 L0,200 Z"
-                  fill="white"
+                  fill="#f9fafb"
                 />
               </svg>
             </div>

@@ -334,7 +334,7 @@ export function Home({ onNavigate }: HomeProps) {
         `}</style>
       </div>
 
-        </div>
+      </div>
 
       {/* Quick Links Section */}
       <section ref={quickLinksRef} className="py-16 bg-white -mt-px">
