@@ -4,7 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 import { Card, CardContent } from '@/components/ui/card';
 
-import { Collapse, Panel, AccordionItem } from '@/components/ui/Accordion';
+import { AccordionItem } from '@/components/ui/Accordion';
 
 import { Divider } from '@/components/ui/divider';
 
