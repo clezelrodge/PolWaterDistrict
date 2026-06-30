@@ -2,6 +2,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Tabs } from 'antd';    
 import { FileText } from 'lucide-react';
 import { Link } from 'lucide-react';
+import { Images } from 'lucide-react';
 
 export default function GAD() {
 
@@ -287,13 +288,13 @@ export default function GAD() {
                                       Levels
                                       <img src="/GADlvl.png" alt="GAD Levels" className="max-w-181 h-auto" />
                                       <div className="grid grid-cols-2 gap-4 mt-4 mb-4">
-                                        <img src="lv1.png" alt="GAD Level 1" className="max-w-181 h-auto" />
-                                        <img src="lv2.png" alt="GAD Level 2" className="max-w-181 h-auto" />
-                                        <img src="lv3.png" alt="GAD Level 3" className="max-w-181 h-auto" />
-                                        <img src="lv4.png" alt="GAD Level 4" className="max-w-181 h-auto" />
+                                        <img src="/lv1.png" alt="GAD Level 1" className="max-w-181 h-auto" />
+                                        <img src="/lv2.png" alt="GAD Level 2" className="max-w-181 h-auto" />
+                                        <img src="/lv3.png" alt="GAD Level 3" className="max-w-181 h-auto" />
+                                        <img src="/lv4.png" alt="GAD Level 4" className="max-w-181 h-auto" />
                                       </div>
                                       <div className="flex flex-col items-center text-center">
-                                        <img src="lv5.png" alt="GAD Level 5" className="max-w-181 h-auto" />
+                                        <img src="/lv5.png" alt="GAD Level 5" className="max-w-181 h-auto" />
                                       </div>
                                     </div>
                                     <div className="flex flex-col items-center text-center text-2xl gap-4 mt-6 mb-6">
@@ -315,7 +316,7 @@ export default function GAD() {
                                         <div className="w-full border-t border-gray-300" />
                                         <div className="flex items-center gap-2 w-full">
                                           <FileText className="w-5 h-5 text-gray-800" />
-                                          <a href="/GMEF2018" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-600 hover:text-blue-800 underline cursor-pointer">
+                                          <a href="/GMEF2018.pdf" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-600 hover:text-blue-800 underline cursor-pointer">
                                             2018 Level 2 (PDF)
                                           </a>
                                         </div>
@@ -441,7 +442,7 @@ export default function GAD() {
                                           <div className="w-full border-t border-gray-300" />
                                           <div className="flex items-center gap-2 w-full" >
                                             <FileText className="w-5 h-5 text-gray-800" />
-                                            <a href="GADPB2019.pdf" target="_blank" rel="noopener noreferrer" className="text-lg text-blue hover:text-blue-800 underline cursor-pointer">
+                                            <a href="/GADPB2019.pdf" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-600 hover:text-blue-800 underline cursor-pointer">
                                               GAD Plans and Budgets 2019 (PDF)
                                               </a>
                                               </div>
@@ -493,7 +494,7 @@ export default function GAD() {
                                           <div className="w-full border-t border-gray-300"/>
                                           <div className="flex items-center gap-2 w-full">
                                             <FileText className="w-5 h-5 text-gray-800"/>
-                                            <a href="2019GADAR.pdf" target="_blank" rel="nooperner noreferrer" className="text-lg text-blue-600 hover:text-blue-800 underline cursor-pointer">
+                                            <a href="/2019GADAR.pdf" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-600 hover:text-blue-800 underline cursor-pointer">
                                               Accomplishment Report 2019 (PDF)
                                               </a>
                                               </div>
@@ -514,13 +515,15 @@ export default function GAD() {
                                        GAD Agenda 2023 - 2028 (PDF)
                                       </a>
                                     </div>
+                                    <div className="w-full border-t border-gray-300" />
                                     <div className="flex items-center gap-2 w-full">
                                       <FileText className="w-5 h-5 text-gray-800" />
                                       <a href="/GADA2023.pdf" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-600 hover:text-blue-800 underline cursor-pointer">
                                       GAD Agenda 2018 - 2021 (PDF)
                                       </a>
                                       </div>
-                                    </div>
+                                      </div>
+                                    
                                     ),
                                   },  
                               {
@@ -536,12 +539,14 @@ export default function GAD() {
                                               Republic Act 7877: Anti-Sexual Harassment Act of 1995 (Link)
                                     </a>
                                   </div>
+                                  <div className="w-full border-t border-gray-300" />
                                   <div className="flex items-center gap-2 w-full">
                                     <a href="/RA-7877.pdf" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-600 hover:text-blue-800 underline flex items-center gap-2 cursor-pointer">
                                     <FileText className="w-4 h-4" />
                                       Republic Act 7877: Anti-Sexual Harassment Act of 1995 (PDF)
                                     </a>
                                   </div>
+                                  <div className="w-full border-t border-gray-300" />
                                   <div className="flex items-center gap-2 w-full">
                                     <a href="https://pcw.gov.ph/faq-republic-act-9208/" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-600 hover:text-blue-800 underline flex items-center gap-2 cursor-pointer">
                                       <Link className="w-4 h-4" />
@@ -549,26 +554,30 @@ export default function GAD() {
                                       </a>
                                    
                                   </div>
+                                  <div className="w-full border-t border-gray-300" />
                                   <div className="flex items-center gap-2 w-full">
                                     <a href="https://pcw.gov.ph/faq-republic-act-9262/" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-600 hover:text-blue-800 underline flex items-center gap-2 cursor-pointer">
                                     <Link className="w-4 h-4" />
                                     Republic Act 9262: Anti-Violence Against Women and their Children Act of 2004 (Link)
                                     </a>
                                     </div>
+                                    <div className="w-full border-t border-gray-300" />
                                     <div className="flex items-center gap-2 w-full">
-                                      <a href="RA-9262.pdf" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-600 hover:text-blue-800 underline flex items-center gap-2 cursor-pointer">
+                                      <a href="/RA-9262.pdf" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-600 hover:text-blue-800 underline flex items-center gap-2 cursor-pointer">
                                         <FileText className="w-4 h-4" />
                                         Republic Act 9262: Anti-Violence Against Women and their Children Act of 2004 (PDF)
                                       </a>
                                     </div>
+                                    <div className="w-full border-t border-gray-300" />
                                     <div className="flex items-center gap-2 w-full">
                                       <a href="https://pcw.gov.ph/faq-ra-8353-an-act-expanding-the-definition-of-crime-and-rape/" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-600 hover:text-blue-800 underline flex items-center gap-2 cursor-pointer">
                                       <Link className="w-4 h-4" />
                                       Republic Act 8353: Anti-Rape Law of 1997 (Link)
                                       </a>
                                       </div>
+                                      <div className="w-full border-t border-gray-300" />
                                       <div className="flex items-center gap-2 w-full">
-                                      <a href="RA-8353.pdf" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-600 hover:text-blue-800 underline flex items-center gap-2 cursor-pointer">
+                                      <a href="/RA-8353.pdf" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-600 hover:text-blue-800 underline flex items-center gap-2 cursor-pointer">
                                         <FileText className="w-4 h-4" />
                                         Republic Act 8353: Anti-Rape Law of 1997 (PDF)
                                         </a>
@@ -582,7 +591,149 @@ export default function GAD() {
                                 label: (
                                   <div className="mx-4 text-lg font-bold">Sex Disaggregated Data</div>
                                 ),
-                                children: <p className="text-gray-700">Placeholder content for Tab 4 - Subtab 5</p>,
+                                children: (
+                                  <Tabs
+                                    defaultActiveKey="internal"
+                                    items={[
+                                      {
+                                        key: 'internal',
+                                        label: (
+                                          <div className="text-lg font-bold mx-58">Internal</div>
+                                        ),
+                                        children: (
+                                          <Tabs
+                                            defaultActiveKey="capacity"
+                                            items={[
+                                              {
+                                                key: 'capacity',
+                                                label: (
+                                                  <div className="text-lg font-bold mx-4">Capacity Development</div>
+                                                ),
+                                                children: (
+                                                  <div className="flex flex-col gap-4">
+                                                    <div className="flex items-center gap-2 mx-6 mt-4">
+                                                      <FileText className="w-5 h-5 text-gray-800" />
+                                                      <a href="/GFPS.pdf" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-blue-600 hover:text-blue-800 underline cursor-pointer">
+                                                        GFPS (PDF)
+                                                      </a>
+                                                      </div>
+                                                      <div className="w-full border-t border-gray-300" />
+                                                      <div className="flex items-center gap-2 mx-6 mt-4">
+                                                      <Images className="w-5 h-5 text-gray-800" />
+                                                      <a href="/22-1.jpg" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-blue-600 hover:text-blue-800 underline cursor-pointer">
+                                                        GFPS Training 2025 (Image)
+                                                      </a>
+                                                    </div>
+                                                    <div className="w-full border-t border-gray-300" />
+                                                    <div className="flex items-center gap-2 mx-6 mt-4">
+                                                      <Images className="w-5 h-5 text-gray-800" />
+                                                      <a href="/2024-CAP-DEV.pdf" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-blue-600 hover:text-blue-800 underline cursor-pointer">
+                                                      Capacity Development Of GFPS Members 2024 (Image)
+                                                      </a>
+                                                      </div>
+                                                  </div>
+                                                ),
+                                              },
+                                              {
+                                                key: 'employee',
+                                                label: (
+                                                  <div className="text-lg font-bold">PolWD Employees</div>
+                                                ),
+                                                children: (
+                                                  <div className="flex flex-col gap-4">
+                                                    <div className="flex items-center gap-2 mx-6 mt-4">
+                                                      <FileText className="w-5 h-5 text-gray-800" />
+                                                      <a href="/Employee-SDD.pdf" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-blue-600 hover:text-blue-800 underline cursor-pointer">
+                                                        Employee Profile (PDF)
+                                                      </a>
+                                                    </div>
+                                                    <div className="w-full border-t border-gray-300" />
+                                                    <div className="flex items-center gap-2 mx-6 mt-4">
+                                                      <FileText className="w-5 h-5 text-gray-800" />
+                                                      <a href="EMPLOYEES.pdf" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-blue-600 hover:text-blue-800 underline cursor-pointer">
+                                                        GAD Training Attended by Employees
+                                                        </a>
+                                                        </div>
+                                                  </div>
+                                                ),
+                                              },
+                                              {
+                                                key: 'bod',
+                                                label: (
+                                                  <div className="text-lg font-bold">PolWD Board of Directors</div>
+                                                ),
+                                                children: (
+                                                  <div className="flex flex-col gap-4">
+                                                    <div className="flex gap-2 items-center mx-6 mt-4">
+                                                    <Images className="w-5 h-5 text-gray-800" />
+                                                      <a href="/24.jpg" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-blue-600 hover:text-blue-800 underline cursor-pointer">
+                                                        Board of Directors 2025 (Image)
+                                                      </a>
+                                                      </div>
+                                                      <div className="w-full border-t border-gray-300" />
+                                                    <div className="flex items-center gap-2 mx-6 mt-4">
+                                                      <Images className="w-5 h-5 text-gray-800" />
+                                                      <a href="/BOD-SDD.pdf" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-blue-600 hover:text-blue-800 underline cursor-pointer">
+                                                      Board of Directors 2024 (Image)
+                                                      </a>
+                                                      </div>
+                                                      <div className="w-full border-t border-gray-300" />
+                                                      <div className="flex items-center gap-2 mx-6 mt-4">
+                                                        <Images className="w-5 h-5 text-gray-800" />
+                                                        <a href="/2023-BODs-and-Employees.pdf" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-blue-600 hover:text-blue-800 underline cursor-pointer">
+                                                        Board of Directors 2023 (Images)
+                                                        </a>
+                                                        </div>
+                                                        <div className="w-full border-t border-gray-300" />
+                                                        <div className="flex items-center gap-2 mx-6 mt-4">
+                                                          <Images className="w-5 h-5 text-gray-800" />
+                                                          <a href="/2022-BODs-and-Employees.pdf" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-blue-600 hover:text-blue-800 underline cursor-pointer">
+                                                          Board of Directors 2022 (Images)
+                                                          </a>
+                                                          </div>
+
+                                                      <div className="w-full border-t border-gray-300" />
+                                                      <div className="flex items-center gap-2 mx-6 mt-4">
+                                                        <FileText className="w-5 h-5 text-gray-800" />
+                                                        <a href="/2021.pdf" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-blue-600 hover:text-blue-800 underline cursor-pointer">
+                                                        Board of Directors 2021 (PDF)
+                                                        </a>
+                                                        </div>
+                                                        <div className="w-full border-t border-gray-300" />
+                                                        <div className="flex items-center gap-2 mx-6 mt-4">
+                                                          <FileText className="w-5 h-5 text-gray-800" />
+                                                          <a href="2020 (1).pdf" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-blue-600 hover:text-blue-800 underline cursor-pointer">
+                                                            Board of Directors 2020 (PDF)
+                                                            </a>
+                                                            </div>
+                                                            <div className="w-full border-t border-gray-300" />
+                                                            <div className="flex items-center gap-2 mx-6 mt-4">
+                                                              <FileText className="w-5 h-5 text-gray-800" />
+                                                              <a href="2019 (1).pdf" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-blue-600 hover:text-blue-800 underline cursor-pointer">
+                                                                Board of Directors 2019 (PDF)
+                                                                </a>
+                                                                </div>
+                                                    </div>
+                                                ),
+                                              },
+                                            ]}
+                                          />
+                                        ),
+                                      },
+                                      {
+                                        key: 'external',
+                                        label: (
+                                          <div className="text-lg font-bold mx-58">External</div>
+                                        ),
+                                        children: (
+                                          <div className="flex flex-col items-center gap-4">
+                                            <p className="text-gray-700">External content</p>
+                                          </div>
+                                        ),
+                                      },
+                                    ]}
+                                  />
+                                ),
                               },
                             ]}
                           />
