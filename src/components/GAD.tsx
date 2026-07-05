@@ -1129,8 +1129,20 @@ export default function GAD() {
                               },
                               {
                                 key: '6-3',
-                                label: 'Subtab 3',
-                                children: <p className="text-gray-700">Placeholder content for Tab 6 - Subtab 3</p>,
+                                label: (
+                                  <div className="text-lg font-bold text-center text-gray-800">Breast Cancer and Menopausal Management
+                                  </div>
+                                ),
+                                children: (
+                                  <div className="flex flex-col text-center font-semibold text-xl gap-4 mx-6 mt-6 mb-6">
+                                    Dr. Rhodora Gagwis conducts Educational and Information lecture on breast cancer and menopausal management to Polomolok Water District employees.
+                                    <div className="gap-4 mt-2 mb-2">
+                                    <img src="/breast-cancer.jpg" alt="Breast Cancer and Menopausal Management" className="max-w-full h-auto"/>
+                                    </div>
+                                    </div>
+                                    
+                                    
+                                ),
                               },
                             ]}
                           />
