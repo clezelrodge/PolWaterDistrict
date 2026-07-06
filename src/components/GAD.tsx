@@ -815,17 +815,17 @@ export default function GAD() {
                                         ),
                                       },
                                     ]}
+                                  />
+                                ),
+                              },
+                            ]}
                           />
-                        ),
-                      },
-                ]}
-              />
-                </CardContent>
-              </Card>
-            ),
-          },
-          {
-            key: '5',
+                        </CardContent>
+                      </Card>
+                    ),
+                  },
+                  {
+                    key: '5',
                     label: (
                       <div className="text-lg font-semibold">GAD Activities</div>
                     ),
@@ -841,19 +841,19 @@ export default function GAD() {
                                   <div className="mx-4 text-lg font-bold">Activities</div>
                                 ),
                                 children: (
-                                 <div className="flex flex-col gap-4 mt-4">
-                                  <div className="text-3xl font-bold text-center text-gray-800">Internal </div>
-                                  <div className="grid grid-cols-3 gap-4 mx-6 mt-4">
-                                    <img src="/MENTAL-HEALTH.png" alt="Mental Health" className="w-full h-auto" />
-                                    <img src="/GENDER-ANALYSIS.png" alt="Gender Analysis" className="w-full h-auto" />
-                                    <img src="/AGYE.png" alt="Annual GAD Yearend Evaluation" className="w-full h-auto" />
-                                  </div>
-                                  <div className="text-3xl font-bold text-center gap-4 mt-4 text-gray-800">External </div>
-                                  <div className="grid grid-cols-2 gap-4 mx-6 mt-4">
-                                    <img src="/CSDD.png" alt="Collection of Sex Disaggregated Data" className="w-full h-auto"/>
-                                    <img src="/COFGD.png" alt="Conduct of Focused Group Discussion" className="w-full h-auto"/>
+                                  <div className="flex flex-col gap-4 mt-4">
+                                    <div className="text-3xl font-bold text-center text-gray-800">Internal </div>
+                                    <div className="grid grid-cols-3 gap-4 mx-6 mt-4">
+                                      <img src="/MENTAL-HEALTH.png" alt="Mental Health" className="w-full h-auto" />
+                                      <img src="/GENDER-ANALYSIS.png" alt="Gender Analysis" className="w-full h-auto" />
+                                      <img src="/AGYE.png" alt="Annual GAD Yearend Evaluation" className="w-full h-auto" />
                                     </div>
-                                </div>
+                                    <div className="text-3xl font-bold text-center gap-4 mt-4 text-gray-800">External </div>
+                                    <div className="grid grid-cols-2 gap-4 mx-6 mt-4">
+                                      <img src="/CSDD.png" alt="Collection of Sex Disaggregated Data" className="w-full h-auto"/>
+                                      <img src="/COFGD.png" alt="Conduct of Focused Group Discussion" className="w-full h-auto"/>
+                                    </div>
+                                  </div>
                                 ),
                               },
                               {
@@ -872,16 +872,16 @@ export default function GAD() {
                                     <div className="grid grid-cols-2 gap-4 mx-6 mt-4">
                                       <img src="/GYEE2024.jpg" alt="GAD YearEnd Evaluation" className="w-full h-auto"/>
                                       <img src="/GMYE2024.jpg" alt="GAD Mid-Year Evaluation" className="w-full h-auto"/>
-                                      </div>
-                                      <div className="text-3xl font-bold text-center gap-4 mt-4 text-gray-800">2023</div>
-                                      <div className="grid grid-cols-2 gap-4 mx-6 mt-4">
-                                        <img src="/GYEE2023.jpg" alt="GAD YearEnd Evaluation" className="w-full h-auto"/>
-                                        <img src="/GMYE2023.jpg" alt="GAD Mid-Year Evaluation" className="w-full h-auto"/>
-                                        </div>
-                                        <div className="text-3xl font-bold text-center gap-4 mt-4 text-gray-800">2022</div>
-                                        <div className="items-center gap-4 mx-66 mt-4">
-                                          <img src="/AGYE2022.png" alt="Annual GAD YearEnd Evaluation" className="w-181 h-auto"/>
-                                          </div>
+                                    </div>
+                                    <div className="text-3xl font-bold text-center gap-4 mt-4 text-gray-800">2023</div>
+                                    <div className="grid grid-cols-2 gap-4 mx-6 mt-4">
+                                      <img src="/GYEE2023.jpg" alt="GAD YearEnd Evaluation" className="w-full h-auto"/>
+                                      <img src="/GMYE2023.jpg" alt="GAD Mid-Year Evaluation" className="w-full h-auto"/>
+                                    </div>
+                                    <div className="text-3xl font-bold text-center gap-4 mt-4 text-gray-800">2022</div>
+                                    <div className="items-center gap-4 mx-66 mt-4">
+                                      <img src="/AGYE2022.png" alt="Annual GAD YearEnd Evaluation" className="w-181 h-auto"/>
+                                    </div>
                                   </div>
                                 ),
                               },
@@ -892,58 +892,57 @@ export default function GAD() {
                                 ),
                                 children: (
                                   <>
-                                  <div className="flex flex-col gap-4 mt-4">
-                                    <div className="text-3xl font-bold text-center text-gray-800">2025 </div>
-                                    <div className="grid grid-cols-2 gap-4 mx-6 mt-4">
-                                      <img src="/NWM2025.jpg" alt="National Women's Month Celebration" className="w-full h-auto" />
-                                      <img src="/NWM2025-1.jpg" alt="Digital Literacy Awareness" className="w-full h-auto" />
-                                      <img src="/NWM2025-2.jpg" alt="OSH and HIRAC" className="w-full h-auto" />
-                                      <img src="/NWM2025-3.jpg" alt="Livelihood Skills" className="w-full h-auto" />
-                                      <img src="/NWM2025-5.jpg" alt="Women's Day Celebration" className="w-full h-auto" />
-                                      <img src="/NWM2025-6.jpg" alt="Mental Health On Work, Life and Balance" className="w-full h-auto"/>
-                                    </div>
-                                    <div className="items-center gap-4 mx-66 mt-4">
-                                    <img src="/NWM2025-7.jpg" alt="Gender Sensitivity Training" className="w-181 h-auto" />
-                                    </div>
-                                  </div>
-
-                                  <div className="flex flex-col gap-4 mt-4">
-                                    <div className="text-3xl font-bold text-center text-gray-800">2024</div>
-                                    <div className="grid grid-cols-2 gap-4 mx-6 mt-4">
-                                      <img src="/NWM2024.jpg" alt="National Women's Month Celebration" className="w-full h-auto"/>
-                                      <img src="/NWM2024-1.jpg" alt="Kakayahan ng Kababaihan, Patutunayan!" className="w-full h-auto"/>
-                                      <img src="/NWM2024-2.jpg" alt="Orientation to OSH and HIRAC" className="w-full h-auto"/>
-                                      <img src="NWM2024-3.jpg" alt="Mobile Photography Contest" className="w-full h-auto"/>
-                                      <img src="/NWM2024-4.jpg" alt="Women's Day Celebration" className="w-full h-auto"/>
-                                      <img src="/NWM2024-5.jpg" alt="Women's Day Celebration-1" className="w-full h-auto"/>
-                                      <img src="/NWM2024-6.jpg" alt="Distribution of Commemorative Item" className="w-full h-auto"/>
-                                      <img src="/NWM2024-7.jpg" alt="Gender Sensitivity Training" classNaem="w-full h-auto"/>
+                                    <div className="flex flex-col gap-4 mt-4">
+                                      <div className="text-3xl font-bold text-center text-gray-800">2025 </div>
+                                      <div className="grid grid-cols-2 gap-4 mx-6 mt-4">
+                                        <img src="/NWM2025.jpg" alt="National Women's Month Celebration" className="w-full h-auto" />
+                                        <img src="/NWM2025-1.jpg" alt="Digital Literacy Awareness" className="w-full h-auto" />
+                                        <img src="/NWM2025-2.jpg" alt="OSH and HIRAC" className="w-full h-auto" />
+                                        <img src="/NWM2025-3.jpg" alt="Livelihood Skills" className="w-full h-auto" />
+                                        <img src="/NWM2025-5.jpg" alt="Women's Day Celebration" className="w-full h-auto" />
+                                        <img src="/NWM2025-6.jpg" alt="Mental Health On Work, Life and Balance" className="w-full h-auto"/>
                                       </div>
+                                      <div className="items-center gap-4 mx-66 mt-4">
+                                        <img src="/NWM2025-7.jpg" alt="Gender Sensitivity Training" className="w-181 h-auto" />
                                       </div>
+                                    </div>
+                                    <div className="flex flex-col gap-4 mt-4">
+                                      <div className="text-3xl font-bold text-center text-gray-800">2024</div>
+                                      <div className="grid grid-cols-2 gap-4 mx-6 mt-4">
+                                        <img src="/NWM2024.jpg" alt="National Women's Month Celebration" className="w-full h-auto"/>
+                                        <img src="/NWM2024-1.jpg" alt="Kakayahan ng Kababaihan, Patutunayan!" className="w-full h-auto"/>
+                                        <img src="/NWM2024-2.jpg" alt="Orientation to OSH and HIRAC" className="w-full h-auto"/>
+                                        <img src="NWM2024-3.jpg" alt="Mobile Photography Contest" className="w-full h-auto"/>
+                                        <img src="/NWM2024-4.jpg" alt="Women's Day Celebration" className="w-full h-auto"/>
+                                        <img src="/NWM2024-5.jpg" alt="Women's Day Celebration-1" className="w-full h-auto"/>
+                                        <img src="/NWM2024-6.jpg" alt="Distribution of Commemorative Item" className="w-full h-auto"/>
+                                        <img src="/NWM2024-7.jpg" alt="Gender Sensitivity Training" className="w-full h-auto"/>
+                                      </div>
+                                    </div>
                                     <div className="flex flex-col gap-4 mt-4">
                                       <div className="text-3xl font-bold text-center text-gray-800">2023</div>
                                       <div className="grid grid-cols-2 gap-4 mx-6 mt-4">
-                                      <img src="/NWM2023.jpg" alt="National Women's Month Celebration" className="w-full h-auto"/>
-                                      <img src="/NWM2023-1.jpg" alt="Selebrayson para kay Juana" className="w-full h-auto"/>
-                                      <img src="/NWM2023-2.jpg" alt="Health and Wellness Seminar" className="w-full h-auto"/>
-                                      <img src="/NWM2023-3.jpg" alt="Stress Management and Mental Health Awareness" className="w-full h-auto"/>
+                                        <img src="/NWM2023.jpg" alt="National Women's Month Celebration" className="w-full h-auto"/>
+                                        <img src="/NWM2023-1.jpg" alt="Selebrayson para kay Juana" className="w-full h-auto"/>
+                                        <img src="/NWM2023-2.jpg" alt="Health and Wellness Seminar" className="w-full h-auto"/>
+                                        <img src="/NWM2023-3.jpg" alt="Stress Management and Mental Health Awareness" className="w-full h-auto"/>
                                       </div>
+                                    </div>
+                                    <div className="flex flex-col gap-4 mt-4">
+                                      <div className="text-3xl font-bold text-center text-gray-800">2022</div>
+                                      <div className="items-center gap-4 mx-66 mt-4">
+                                        <img src="/NWM2022.png" alt="National Women's Month Celebration" className="w-full h-auto"/>
                                       </div>
-                                      <div className="flex flex-col gap-4 mt-4">
-                                        <div className="text-3xl font-bold text-center text-gray-800">2022</div>
-                                        <div className="items-center gap-4 mx-66 mt-4">
-                                          <img src="/NWM2022.png" alt="National Women's Month Celebration" className="w-full h-auto"/>
-                                          </div>
-                                          </div>
+                                    </div>
                                   </>
-                                    ),
+                                ),
                               },
-                               {
+                              {
                                 key: '5-4',
                                 label: (
                                   <div className="mx-4 text-lg font-bold">18-Day Campaign to End VAW</div>
                                 ),
-                                children:(
+                                children: (
                                   <div className="flex flex-col gap-4 mt-4">
                                     <div className="text-3xl font-bold text-center text-gray-800">2025 </div>
                                     <div className="grid grid-cols-2 gap-4 mx-6 mt-4">
@@ -951,74 +950,61 @@ export default function GAD() {
                                       <img src="/VAW2025-1.jpg" alt="Distribution" className="w-full h-auto"/>
                                       <img src="/VAW2025-2.jpg" alt="Anti-Sexual Harassment" className="w-full h-auto"/>
                                       <img src="/VAW2025-3.jpg" alt="Random Drug Testing" className="w-full h-auto"/>
-                                      </div>
-                                      <div className="text-3xl font-bold text-center text-gray-800">2024</div>
-                                      <div className="grid grid-cols-2 gap-4 mx-6 mt-4">
-                                        <img src="/VAW2024.jpg" alt="Campaign to End VAW" className="w-full h-auto"/>
-                                        <img src="/VAW2024-1.jpg" alt="Drug-Free Workplace Awareness Seminar" className="w-full h-auto"/>
-                                        <img src="/VAW2024-2.jpg" alt="Random Drug Testing" className="w-full h-auto"/>
-                                        <img src="/VAW2024-3.jpg" alt="Culmination" className="w-full h-auto"/>
-                                        </div>
-                                      <div className="text-3xl font-bold text-center text-gray-800">2023</div>
-                                      <div className="grid grid-cols-2 gap-4 mx-6 mt-4">
-                                        <img src="/VAW2023.jpg" alt="Campaign to End VAW" className="w-full h-auto"/>
-                                        <img src="/VAW2023-1.jpg" alt="18-Day Campaign to end VAW" className="w-full h-auto"/>
-                                        </div>
-                                        <div className="items-center gap-4 mx-36 mt-6">
-                                        <img src="/VAW2023-2.jpg" alt="Awareness on VAW, SOGIE Bill, and Safe Spaces Act" className="w-full h-auto"/>
-                                        </div>
-                                        <div className="text-3xl font-bold text-center text-gray-800">2022</div>
-                                        <div className="items-center gap-4 mx-36 mt-6">
-                                        <img src="/VAW2022.png" alt="2022 18-Day Campaign to End VAW" className="w-full h-auto"/>
-                                        </div>
-                                     </div>
+                                    </div>
+                                    <div className="text-3xl font-bold text-center text-gray-800">2024</div>
+                                    <div className="grid grid-cols-2 gap-4 mx-6 mt-4">
+                                      <img src="/VAW2024.jpg" alt="Campaign to End VAW" className="w-full h-auto"/>
+                                      <img src="/VAW2024-1.jpg" alt="Drug-Free Workplace Awareness Seminar" className="w-full h-auto"/>
+                                      <img src="/VAW2024-2.jpg" alt="Random Drug Testing" className="w-full h-auto"/>
+                                      <img src="/VAW2024-3.jpg" alt="Culmination" className="w-full h-auto"/>
+                                    </div>
+                                    <div className="text-3xl font-bold text-center text-gray-800">2023</div>
+                                    <div className="grid grid-cols-2 gap-4 mx-6 mt-4">
+                                      <img src="/VAW2023.jpg" alt="Campaign to End VAW" className="w-full h-auto"/>
+                                      <img src="/VAW2023-1.jpg" alt="18-Day Campaign to end VAW" className="w-full h-auto"/>
+                                    </div>
+                                    <div className="items-center gap-4 mx-36 mt-6">
+                                      <img src="/VAW2023-2.jpg" alt="Awareness on VAW, SOGIE Bill, and Safe Spaces Act" className="w-full h-auto"/>
+                                    </div>
+                                    <div className="text-3xl font-bold text-center text-gray-800">2022</div>
+                                    <div className="items-center gap-4 mx-36 mt-6">
+                                      <img src="/VAW2022.png" alt="2022 18-Day Campaign to End VAW" className="w-full h-auto"/>
+                                    </div>
+                                  </div>
                                 ),
                               },
-                               {
+                              {
                                 key: '5-5',
                                 label: (
                                   <div className="mx-4 text-lg font-bold">Mental Health Awareness</div>
                                 ),
                                 children: (
                                   <div className="text-3xl mt-4 font-bold text-center text-gray-800">
-                                  2023
-                                <div className="items-center gap-4 mx-36 mt-6">
-                                  <img src="/2023-SM-and-MHA.jpg" alt="2023 Stress Management and Mental Health Awareness" className="w-full h-auto"/>
-                                </div>
-                                <div className="items-center gap-4 mx-36 mt-6">
-                                  <img src="/MENTAL-HEALTH-COVID-AWARENESS.png" alt="Mental Health and Covid Awareness" className="w-full h-auto"/>
-                                </div>
-                                </div>
+                                    2023
+                                    <div className="items-center gap-4 mx-36 mt-6">
+                                      <img src="/2023-SM-and-MHA.jpg" alt="2023 Stress Management and Mental Health Awareness" className="w-full h-auto"/>
+                                    </div>
+                                    <div className="items-center gap-4 mx-36 mt-6">
+                                      <img src="/MENTAL-HEALTH-COVID-AWARENESS.png" alt="Mental Health and Covid Awareness" className="w-full h-auto"/>
+                                    </div>
+                                  </div>
                                 ),
                               },
+                    
                               {
                                 key: '5-6',
-                                label:( 
-                                  <div className="mx-4 text-lg font-bold">PIMME</div>
-                                ),
-                                children: (
-                                    <div className="text-3xl font-bold text-center text-gray-800">2024
-                                    <div className="grid grid-cols-2 gap-4 mx-6 mt-4">
-                                      <img src="/PIMME2024.jpg" alt="PIMME 2024" className="w-full h-auto"/>
-                                      <img src="/PIMME2024-1.jpg" alt="Conduct of PIMME and Market Survey" className="w-full h-auto"/>
-                                    </div>
-                                    </div>
-                                ),
-                              },
-                              {
-                                key: '5-7',
-                                label:(
+                                label: (
                                   <div className="mx-4 text-lg font-bold">Gender Analysis</div>
                                 ),
                                 children: (
                                   <div className="items-center gap-4 mx-36 mt-6">
                                     <img src="/GENDER-ANALYSIS-1.png" alt="Gender Analysis" className="w-full h-auto"/>
-                                    </div>
+                                  </div>
                                 ),
                               },
                               {
-                                key:'5-8',
-                                label:(
+                                key: '5-7',
+                                label: (
                                   <div className="mx-4 text-lg font-bold">Conduct of Focused Group Discussion</div>
                                 ),
                                 children: (
@@ -1036,62 +1022,63 @@ export default function GAD() {
                                       <div className="grid grid-cols-2 gap-4 mx-6 mt-4">
                                         <img src="/FGD2024.jpg" alt="Focused Group Discussion" className="w-full h-auto"/>
                                         <img src="/FGD2024-1.jpg" alt="Focused Group Discussion" className="w-full h-auto"/>
-                                        </div>
-                                        </div>
-                                        <div className="text-3xl font-bold text-center mt-4 text-gray-800">2023
-                                          <div className="grid grid-cols-2 gap-4 mx-6 mt-4">
-                                            <img src="/FGD2023.jpg" alt="Focused Group Discussion" className="w-full h-auto"/>
-                                            <img src="/FGD2023-1.jpg" alt="Focused Group Discussion" className="w-full h-auto"/>
-                                            </div>
-                                            </div>
-                                        <div className="text-3xl font-bold text-center mt-4 text-gray-800">2022
-                                          <div className="items-center gap-4 mx-36 mt-6">
-                                            <img src="/FGD2022.png" alt="Focused Group Discussion" className="w-full h-auto"/>
-                                            </div>
-                                            </div>  
+                                      </div>
                                     </div>
+                                    <div className="text-3xl font-bold text-center mt-4 text-gray-800">2023
+                                      <div className="grid grid-cols-2 gap-4 mx-6 mt-4">
+                                        <img src="/FGD2023.jpg" alt="Focused Group Discussion" className="w-full h-auto"/>
+                                        <img src="/FGD2023-1.jpg" alt="Focused Group Discussion" className="w-full h-auto"/>
+                                      </div>
+                                    </div>
+                                    <div className="text-3xl font-bold text-center mt-4 text-gray-800">2022
+                                      <div className="items-center gap-4 mx-36 mt-6">
+                                        <img src="/FGD2022.png" alt="Focused Group Discussion" className="w-full h-auto"/>
+                                      </div>
+                                    </div>
+                                  </div>
                                 ),
                               },
                               {
-                                key: '5-9',
+                              key: '5-8',
                                 label: (
                                   <div className="mx-4 text-lg font-bold">Collection of Sex Disaggregated Data
                                   </div>
                                 ),
                                 children: (
                                   <div className="text-3xl font-bold text-center text-gray-800">2025
-                                  <div className="items-center gap-4 mx-36 mt-6">
-                                    <img src="/CSDD24-25.jpg" alt="Collections of SDD" className="w-full h-auto"/>
-                                  </div>
-                                  <div className="text-3xl font-bold text-center mt-4 text-gray-800">2024
                                     <div className="items-center gap-4 mx-36 mt-6">
-                                      <img src="/CSDD24.jpg" alt="CSDD" className="w-full h-auto"/>
+                                      <img src="/CSDD24-25.jpg" alt="Collections of SDD" className="w-full h-auto"/>
+                                    </div>
+                                    <div className="text-3xl font-bold text-center mt-4 text-gray-800">2024
+                                      <div className="items-center gap-4 mx-36 mt-6">
+                                        <img src="/CSDD24.jpg" alt="CSDD" className="w-full h-auto"/>
+                                      </div>
+                                    </div>
+                                    <div className="text-3xl font-bold text-center mt-4 text-gray-800">2023
+                                      <div className="items-center gap-4 mx-36 mt-6">
+                                        <img src="/CSDD23.jpg" alt="CSDD" className="w-full h-auto"/>
+                                      </div>
+                                    </div>
+                                    <div className="text-3xl font-bold text-center mt-4 text-gray-800">2022
+                                      <div className="items-center gap-4 mx-36 mt-6">
+                                        <img src="/CSDD22.png" alt="CSDD" className="w-full h-auto"/>
+                                      </div>
+                                    </div>
                                   </div>
-                                  </div>
-                                  <div className="text-3xl font-bold text-center mt-4 text-gray-800">2023
-                                    <div className="items-center gap-4 mx-36 mt-6">
-                                      <img src="/CSDD23.jpg" alt="CSDD" className="w-full h-auto"/>
-                                      </div>
-                                      </div>
-                                  <div className="text-3xl font-bold text-center mt-4 text-gray-800">2022
-                                    <div className="items-center gap-4 mx-36 mt-6">
-                                      <img src="/CSDD22.png" alt="CSDD" className="w-full h-auto"/>
-                                      </div>
-                                      </div>
-                                      </div>
                                 ),
                               },
+                    
                             ]}
                           />
                         </CardContent>
                       </Card>
                     ),
                   },
-                  {
+                 {
                     key: '6',
                     label: (
-                    <div className="text-lg font-semibold">Health and Wellness Program</div>
-                  ),
+                      <div className="text-lg font-semibold">Health and Wellness Program</div>
+                    ),
                     children: (
                       <Card className="shadow-xl">
                         <CardContent className="p-6">
@@ -1104,10 +1091,10 @@ export default function GAD() {
                                   <div className="mx-4 text-lg font-bold">Health and Wellness Program Seminar</div>
                                 ),
                                 children: (
-                                <div className="text-3xl font-bold text-center text-gray-800">2023
-                                <div className="items-center gap-4 mx-36 mt-6">
-                                  <img src="2023-H-and-W.jpg" alt="Health and Wellness" className="w-full h-auto"/>
-                                  </div>
+                                  <div className="text-3xl font-bold text-center text-gray-800">2023
+                                    <div className="items-center gap-4 mx-36 mt-6">
+                                      <img src="2023-H-and-W.jpg" alt="Health and Wellness" className="w-full h-auto"/>
+                                    </div>
                                   </div>
                                 ),
                               },
@@ -1118,13 +1105,11 @@ export default function GAD() {
                                   </div>
                                 ),
                                 children: (
-                                  
-                                  <div className="flex flex-col text-center font-semibold text-xl gap-4 mx-6  mt-6 mb-6">
+                                  <div className="flex flex-col text-center font-semibold text-xl gap-4 mx-6 mt-6 mb-6">
                                     Education and information lecture of Dr. Japit Galagaran Jr. on lung cancer prevention and early detection with most women as secondhand smokers and other lung diseases.
                                     <div className="gap-4 mt-2 mb-2"></div>
                                     <img src="/cancer-awareness-campaign.jpg" alt="Lung Cancer and Other Lung Diseases" className="max-w-full h-auto" />
-                                    </div>
-
+                                  </div>
                                 ),
                               },
                               {
@@ -1136,12 +1121,23 @@ export default function GAD() {
                                 children: (
                                   <div className="flex flex-col text-center font-semibold text-xl gap-4 mx-6 mt-6 mb-6">
                                     Dr. Rhodora Gagwis conducts Educational and Information lecture on breast cancer and menopausal management to Polomolok Water District employees.
-                                    <div className="gap-4 mt-2 mb-2">
+                                    <div className="gap-4 mt-2 mb-2"></div>
                                     <img src="/breast-cancer.jpg" alt="Breast Cancer and Menopausal Management" className="max-w-full h-auto"/>
-                                    </div>
-                                    </div>
-                                    
-                                    
+                                  </div>
+                                ),
+                              },
+                              {
+                                key: '6-4',
+                                label: (
+                                  <div className="text-lg font-bold text-center text-gray-800">Free Bone Density Test and Anemia Screening
+                                  </div>
+                                ),
+                                children: (
+                                  <div className="flex flex-col text-center font-semibold text-xl gap-4 mx-6 mt-6 mb-6">
+                                    A technician from Bio Femme, Inc.,a subsidiary company of United Laboratories, Inc. takes a blood sample for a free bone density test.
+                                    <div className="gap-4 mt-2 mb-2"></div>
+                                    <img src="/bone-screening.jpg" alt="Bone Screening" className="max-w-full h-auto"/>
+                                  </div>
                                 ),
                               },
                             ]}
@@ -1149,7 +1145,22 @@ export default function GAD() {
                         </CardContent>
                       </Card>
                     ),
-                  },
+                                   },
+                  {
+                    key: '7',
+                    label: (
+                      <div className="text-lg font-semibold">PIMME</div>
+                    ),
+                    children: (
+                      <div className="text-3xl font-bold text-center mt-4 text-gray-800">
+                        2024
+                        <div className="grid grid-cols-2 gap-4 mt-4 mb-4">
+                          <img src="2024-PIMME.jpg" alt="PIMME 2024" className="max-w-full h-auto"/>
+                          <img src="2024-PIMME-1.jpg" alt="PIMME 2024" className="max-w-full h-auto"/>
+                        </div>
+                      </div>
+                    ),
+                  }
                 ]}
               />
             </div>
