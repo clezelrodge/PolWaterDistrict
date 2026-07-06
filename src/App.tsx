@@ -8,7 +8,8 @@ import { CSR } from './components/csr';
 import { Gallery } from './components/Gallery';
 import { BackToTop } from './components/ui/arrowup';
 // App.tsx
-import GAD from './components/GAD';  // ✅ Default import (no curly braces)
+import GAD from './components/GAD';
+import HR from './components/HR';
 
 // Define the possible views
 export type View = 'home' | 'services' | 'about' | 'csr' | 'gad' | 'hr';
@@ -37,8 +38,10 @@ function App() {
         return <About />;
       case 'csr':
         return <CSR />;
-      case 'GAD':  // 
+      case 'gad':
         return <GAD />;
+      case 'hr':
+        return <HR />;
       case 'contact':
         return <div className="min-h-screen flex items-center justify-center p-8"><h1 className="text-4xl font-bold text-blue-900">Contact Page - Coming Soon</h1></div>;
       default:

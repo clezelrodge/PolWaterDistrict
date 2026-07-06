@@ -349,13 +349,13 @@ export function About() {
 
           <div className="text-center">
 
-            <h1 className="text-4xl lg:text-5xl font-bold text-blue-100 mb-4 drop-shadow-lg">
+            <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4 drop-shadow-lg">
 
               About Us
 
             </h1>
 
-            <p className="text-blue-100 max-w-2xl mx-auto text-lg drop-shadow-md">
+            <p className="text-white max-w-2xl mx-auto text-lg drop-shadow-md">
 
               Discover more about Polomolok Water District.
 

@@ -47,9 +47,9 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Business Hours */}
+          {/* Office Hours */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Offices Hours</h3>
+            <h3 className="text-lg font-bold mb-4">Office Hours</h3>
             <ul className="space-y-2 text-sm text-blue-100">
               <li className="flex flex-col gap-1">
                 <span>Monday - Friday</span>
