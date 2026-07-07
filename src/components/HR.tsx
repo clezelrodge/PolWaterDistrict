@@ -219,14 +219,25 @@ export default function HR() {
                       </Card>
                     ),
                   },
-                   {
-                                key: '4',
+                  {
+                    key: '4',
+                    label: (
+                      <div className="text-lg font-semibold">Recruitment, Selection, and Placement
+                      </div>
+                    ),
+                    children: (
+                      <Card className="shadow-xl">
+                        <CardContent className="p-6">
+                          <Tabs
+                            defaultActiveKey="4-1"
+                            items={[
+                              {
+                                key: '4-1',
                                 label: (
-                                    <div className="text-lg font-semibold">Merit Plan Selection
-                                    </div>
+                                  <div className="mx-2 text-lg font-bold">Merit Plan Selection</div>
                                 ),
                                 children: (
-                                    <div className="flex flex-col items-center justify-center gap-4">
+                                  <div className="flex flex-col items-center justify-center gap-4">
                                     <div className="grid grid-cols-2 mt-6 mb-4 gap-4">
                                       <img src="/0001.jpg" alt="Merit Plan Selection" className="max-w-full h-auto" />
                                       <img src="/0002.jpg" alt="Merit Plan Selection" className="max-w-full h-auto" />
@@ -258,71 +269,286 @@ export default function HR() {
                                       <img src="/0028.jpg" alt="Merit Plan Selection" className="max-w-full h-auto"/>
                                     </div>
                                     <div className="flex flex-col gap-4 mt-4 mb-4">
-                                        <img src="/0029.jpg" alt="Merit Plan Selection" className="max-w-170 h-auto"/>
-                                        </div>
+                                      <img src="/0029.jpg" alt="Merit Plan Selection" className="max-w-170 h-auto"/>
                                     </div>
+                                  </div>
                                 ),
                               },
                               {
-                                key: '5',
+                                key: '4-2',
                                 label: (
-                                    <div className="text-lg font-semibold"> Equal Opportunity Principle
-                                    </div>
+                                  <div className="mx-2 text-lg font-bold">Equal Opportunity Principle</div>
                                 ),
-                                children:
-                                (
-                                    <div className="flex flex-col items-center mt-6 mb-6 justify-center gap-4">
-                                        <div className="grid grid-cols-2 mt-6 mb-4 gap-4">
-                                        <img src="/EOP.jpg" alt="Equal Opportunity Principle" className="max-w-170 h-auto"/>
-                                        <img src="/EOP1.jpg" alt="Equal Opportunity Principle" className="max-w-170 h-auto"/>
-                                        </div>
+                                children: (
+                                  <div className="flex flex-col items-center mt-6 mb-6 justify-center gap-4">
+                                    <div className="grid grid-cols-2 mt-6 mb-4 gap-4">
+                                      <img src="/EOP.jpg" alt="Equal Opportunity Principle" className="max-w-170 h-auto"/>
+                                      <img src="/EOP1.jpg" alt="Equal Opportunity Principle" className="max-w-170 h-auto"/>
                                     </div>
-                                ),
-                                
-                              },
-                              {
-                                key: '6',
-                                label:
-                                (
-                                    <div className="text-lg font-semibold"> Video Conferencing for Interview Guidelines
-                                    </div>
-
-                                ),
-                                children:
-                                (
-                                    <div className="flex flex-col items-center mt-6 mb-6 justify-center gap-4">
-                                        <div className="grid grid-cols-2 mt-6 mb-4 gap-4">
-                                            <img src="/VCIG.jpg" alt="Video Conferencing for Interview Guidelines" className="max-w-full h-auto"/>
-                                            <img src="/VCIG1.jpg" alt="Video Conferencing for Interview Guidelines" className="max-w-full h-auto"/>
-                                            <img src="/VCIG2.jpg" alt="Video Conferencing for Interview Guidelines" className="max-w-full h-auto"/>
-                                            <img src="/VCIG3.jpg" alt="Video Conferencing for Interview Guidelines" className="max-w-full h-auto"/>
-                                            <img src="/VCIG4.jpg" alt="Video Conferencing for Interview Guidelines" className="max-w-full h-auto"/>
-                                            <img src="/VCIG5.jpg" alt="Video Conferencing for Interview Guidelines" className="max-w-full h-auto"/>
-                                        </div>
-                                        <div className="flex flex-col items-center mb-6 justify-center gap-4">
-                                            <img src="/VCIG6.jpg" alt="Video Conferencing for Interview Guidelines" className="max-w-170 h-auto"/>
-                                            </div>
-                                    </div> 
+                                  </div>
                                 ),
                               },
                               {
-                                key: '7',
-                                label:
-                                (
-                                    <div className="text-lg font-semibold"> MSP Committee
+                                key: '4-3',
+                                label: (
+                                  <div className="mx-2 text-lg font-bold">Video Conferencing for Interview Guidelines</div>
+                                ),
+                                children: (
+                                  <div className="flex flex-col items-center mt-6 mb-6 justify-center gap-4">
+                                    <div className="grid grid-cols-2 mt-6 mb-4 gap-4">
+                                      <img src="/VCIG.jpg" alt="Video Conferencing for Interview Guidelines" className="max-w-full h-auto"/>
+                                      <img src="/VCIG1.jpg" alt="Video Conferencing for Interview Guidelines" className="max-w-full h-auto"/>
+                                      <img src="/VCIG2.jpg" alt="Video Conferencing for Interview Guidelines" className="max-w-full h-auto"/>
+                                      <img src="/VCIG3.jpg" alt="Video Conferencing for Interview Guidelines" className="max-w-full h-auto"/>
+                                      <img src="/VCIG4.jpg" alt="Video Conferencing for Interview Guidelines" className="max-w-full h-auto"/>
+                                      <img src="/VCIG5.jpg" alt="Video Conferencing for Interview Guidelines" className="max-w-full h-auto"/>
+                                    </div>
+                                    <div className="flex flex-col items-center mb-6 justify-center gap-4">
+                                      <img src="/VCIG6.jpg" alt="Video Conferencing for Interview Guidelines" className="max-w-170 h-auto"/>
+                                    </div>
+                                  </div>
+                                ),
+                              },
+                              {
+                                key: '4-4',
+                                label: (
+                                  <div className="mx-2 text-lg font-bold">MSP Committee</div>
+                                ),
+                                children: (
+                                  <div className="flex flex-col items-center mt-6 mb-6 justify-center gap-4">
+                                    <div className="grid grid-cols-2 mt-6 mb-4 gap-4">
+                                      <img src="/MSPC.png" alt="MSP Committee" className="max-w-full h-auto"/>
+                                      <img src="/MSPC1.png" alt="MSP Committee" className="max-w-full h-auto"/>
+                                    </div>
+                                  </div>
+                                ),
+                              },
+                            ]}
+                          />
+                        </CardContent>
+                      </Card>
+                    ),
+                  },
+                  {
+                    key: '5',
+                    label: (
+                      <div className="text-lg font-semibold">Learning and Development</div>
+                    ),
+                    children: (
+                      <Card className="shadow-xl">
+                        <CardContent className="p-6">
+                          <Tabs
+                            defaultActiveKey="5-1"
+                            items={[
+                              {
+                                key: '5-1',
+                                label: (
+                                  <div className="mx-2 text-lg font-bold">Learning and Development Plan</div>
+                                ),
+                                children: (
+                                  <div className="flex flex-col items-center mt-6 mb-6 justify-center gap-4">
+                                    <div className="grid grid-cols-2 mt-6 mb-4 gap-4">
+                                        <img src="/LDP001.jpg" alt="Learning and Development Plan" className="max-w-full h-auto"/>
+                                        <img src="/LDP002.jpg" alt="Learning and Development Plan" className="max-w-full h-auto"/>
+                                        <img src="/LDP003.jpg" alt="Learning and Development Plan" className="max-w-full h-auto"/>
+                                        <img src="/LDP004.jpg" alt="Learning and Development Plan" className="max-w-full h-auto"/>
+                                        <img src="/LDP005.jpg" alt="Learning and Development Plan" className="max-w-full h-auto"/>
+                                        <img src="/LDP006.jpg" alt="Learning and Development Plan" className="max-w-full h-auto"/>
+                                        <img src="/LDP007.jpg" alt="Learning and Development Plan" className="max-w-full h-auto"/>
+                                        <img src="/LDP008.jpg" alt="Learning and Development Plan" className="max-w-full h-auto"/>
+                                        <img src="/LDP009.jpg" alt="Learning and Development Plan" className="max-w-full h-auto"/>
+                                        <img src="/LDP010.jpg" alt="Learning and Development Plan" className="max-w-full h-auto"/>
+                                        <img src="/LDP011.jpg" alt="Learning and Development Plan" className="max-w-full h-auto"/>
+                                        <img src="/LDP012.jpg" alt="Learning and Development Plan" className="max-w-full h-auto"/>
+                                        <img src="/LDP013.jpg" alt="Learning and Development Plan" className="max-w-full h-auto"/>
+                                        <img src="/LDP014.jpg" alt="Learning and Development Plan" className="max-w-full h-auto"/>
+                                    </div>
+                                    <div className="flex flex-col items-center justify-center">
+                                        <img src="/LDP015.jpg" alt="Learning and Development Plan" className="max-w-full h-auto"/>
+                                    </div>
+                                </div>
+                                ),
+                              },
+                              {
+                                key: '5-2',
+                                label: (
+                                    <div className="text-lg font-bold">Annual Training Plan
+                                    </div>
+                                ),
+                                children: (
+                                    <div className="flex flex-col items-center mt-6 mb-6 justify-center gap-4">
+                                        <div className="grid grid-cols-2 mt-6 mb-4 gap-4">
+                                            <img src="/ATP1.jpg" alt="Annual Training Plan" className="max-w-full h-auto"/>
+                                            <img src="/ATP2.jpg" alt="Annual Training Plan" className="max-w-full h-auto"/>
+                                            <img src="/ATP3.jpg" alt="Annual Training Plan" className="max-w-full h-auto"/>
+                                            <img src="/ATP4.jpg" alt="Annual Training Plan" className="max-w-full h-auto"/>
+                                            </div>
+                                            </div>
+                                ),
+                              },
+                              {
+                                key: '5-3',
+                                label: (
+                                    <div className="text-lg font-bold">Office Order Designation of HRDCommittee
+                                    </div>
+                                ),
+                                children: (
+                                    <div className="flex flex-col items-center mt-6 mb-6 justify-center gap-4">
+                                        <img src="/Committees_003.png" alt="Office Order Designation of HRDCommittee" className="max-w-181 h-auto"/>
                                         </div>
+                                ),
+                              },
+                            ]}
+                          />
+                        </CardContent>
+                      </Card>
+                    ),
+                  },
+                  {
+                    key: '6',
+                    label: (
+                      <div className="text-lg font-semibold">Strategic Performance Management System</div>
+                    ),
+                    children: (
+                      <Card className="shadow-xl">
+                        <CardContent className="p-6">
+                          <Tabs
+                            defaultActiveKey="6-1"
+                            items={[
+                              {
+                                key: '6-1',
+                                label: (
+                                  <div className="mx-8 text-lg font-bold">SPMS</div>
+                                ),
+                                children: (
+                                    <div className="flex flex-col items-center mt-6 mb-6 justify-center gap-4">
+                                        <div className="grid grid-cols-2 mt-6 mb-4 gap-4">
+                                        <img src="/SPMS001.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS002.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS003.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS004.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS005.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS006.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS007.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS008.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS009.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS010.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS011.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS012.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS013.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS014.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS015.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS016.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS017.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS018.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS019.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS020.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS021.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS022.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS023.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS024.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS025.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS026.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS027.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/SPMS028.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        </div>
+                                        <div className="flex flex-col mt-6 mb-6 justify-center gap-4">
+                                            <img src="/SPMS029.jpg" alt="SPMS" className="max-w-170 h-auto"/>
+                                            </div>
+                                            </div>
+                                ),
+                              },
+                              {
+                                key: '6-2',
+                                label: (
+                                  <div className="mx-2 text-lg font-bold">SPMS Committee</div>
+                                ),
+                                children: (
+                                  <div className="flex flex-col items-center mt-8 mb-6 justify-center gap-4">
+                                    <img src="/SPMS-Committee.png" alt="SPMS Committee" className="max-w-170 h-auto"/>
+                                  </div>
+                                ),
+                              },
+                            ]}
+                          />
+                        </CardContent>
+                      </Card>
+                    ),
+                  },
+                   {
+                    key: '7',
+                    label: (
+                      <div className="text-lg font-semibold">Rewards and Recognition</div>
+                    ),
+                    children: (
+                      <Card className="shadow-xl">
+                        <CardContent className="p-6">
+                          <Tabs
+                            defaultActiveKey="7-1"
+                            items={[
+                              {
+                                key: '7-1',
+                                label: (
+                                    <div className="mx-8 text-lg font-bold">PRAISE Program</div>
+                                ),
+                                children: (
+                                    <div className="flex flex-col items-center mt-6 mb-6 justify-center gap-4">
+                                        <div className="grid grid-cols-2 mt-6 mb-4 gap-4">
+                                        <img src="/PP1.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP2.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP3.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP4.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP5.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP6.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP7.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP8.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP9.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP10.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP11.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP12.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP13.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP14.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP15.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP16.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP17.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP18.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP19.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP20.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP21.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP22.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP23.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP24.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP25.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP26.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP27.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP28.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP29.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP30.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP31.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        <img src="/PP32.jpg" alt="SPMS" className="max-w-full h-auto"/>
+                                        </div>
+                                            </div>
+                                ),
+                            },
+                            {
+                                key: '7-2',
+                                label:(
+                                    <div className="text-lg font-bold">PRAISE Committee
+                                    </div>
                                 ),
                                 children:
                                 (
-                                    <div className="flex flex-col items-center mt-6 mb-6 justify-center gap-4">
-                                        <div className="grid grid-cols-2 mt-6 mb-4 gap-4">
-                                            <img src="/MSPC.png" alt="MSP Committee" className="max-w-full h-auto"/>
-                                            <img src="/MSPC1.png" alt="MSP Committee" className="max-2-full h-auto"/>
-                                            </div>
-                                    </div>
+                                    <div className="flex flex-col items-center mt-8 mb-6 justify-center gap-4">
+                                    <img src="PRAISE-Committee.png" alt="PRAISE Committee" className="max-w-170 h-auto"/>
+                                  </div>
                                 ),
-                              },
-
+                            },
+                            ]}
+                          />
+                        </CardContent>
+                      </Card>
+                    ),
+                  },
                 ]}
               />
             </div>
