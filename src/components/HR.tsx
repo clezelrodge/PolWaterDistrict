@@ -1110,6 +1110,80 @@ export default function HR() {
                                   </div>
                                 ),
                               },
+                              {
+                                key: '9-3',
+                                label: <div className="text-lg mx-4 font-semibold">Performance-Based Bonus (PBB)</div>,
+                                children: (
+                                  <div className="max-w-4xl mx-auto">
+                                    <div className="text-center mb-8">
+                                      <h3 className="text-2xl font-bold text-blue-900 mb-2 mt-8">PERFORMANCE-BASED BONUS (PBB)</h3>
+                                    </div>
+                                    
+                                    <div className="space-y-6 text-gray-700">
+                                      <div>
+                                        <h4 className="text-lg font-bold text-blue-900 mb-3">Rationale:</h4>
+                                        <p className="mb-4">Executive Order No. 80 issued by the President on July 20, 2012 directed the adoption of the Performance-Based Incentive System (PBIS) for Government employees. The PBIS is based on the belief that service delivery by the bureaucracy can be improved by linking personnel incentives to the bureau or delivery unit's performance and recognizing and rewarding exemplary performance to foster teamwork and meritocracy.</p>
+                                        <p className="mb-4">Under the PBIS, qualified agencies that submitted all compliance reports on time will be assessed, provided that they meet at least 90 percent of their targets for the year. Agencies are also required to fulfill all the good governance conditions set by the Inter-Agency Task Force on the Harmonization of the National Government Performance Monitoring, Information and Reporting Systems, or the A.O. 25 Task Force.</p>
+                                        <p className="mb-4">The PBB, which is a top-up bonus, shall be given to personnel of bureaus or delivery units in accordance with their contribution to the accomplishment of their Department's overall targets and commitments, subject to the following criteria:</p>
+                                        <ul className="list-disc ml-8 mt-2 space-y-2">
+                                          <li><strong>I.</strong> Achievement by the Departments of performance targets under their respective Major Final Outputs (MFOs), and Priority Program/Project commitments as agreed with the President under the 5 KRAs under EO 43; and</li>
+                                          <li><strong>II.</strong> Accomplishment of good governance conditions set by the Inter-Agency Task Force (IATF) created under AO 25.</li>
+                                        </ul>
+                                      </div>
+
+                                      <div>
+                                        <h4 className="text-lg font-bold text-blue-900 mb-3">Objectives:</h4>
+                                        <ul className="list-disc ml-8 mt-2 space-y-2">
+                                          <li>To recognize and reward exemplary performance in the public sector to enhance service delivery.</li>
+                                          <li>To rationalize the distribution of incentives across performance categories of groups and individuals thereby moving away from across-the-board incentives overtime.</li>
+                                          <li>To nurture team spirit towards the effective execution of operational plans by linking personnel incentives to the delivery units' performance.</li>
+                                          <li>To strengthen performance and appraisal system based on existing systems like the Organizational Performance Indicator Framework (OPIF), the Strategic Performance Management System (SPMS) of the Civil Service Commission, and the Results Based Performance Management System (RBPMS) provided under AO 25 of 2011.</li>
+                                        </ul>
+                                      </div>
+
+                                      <div>
+                                        <h4 className="text-lg font-bold text-blue-900 mb-3">Polomolok Water District Compliance</h4>
+                                        <p className="mb-3">Polomolok Water District has complied / accomplished and achieved the performance targets under respective Major Final Outputs (MFO) targets and commitments under EO 43 based on the following:</p>
+                                        
+                                        <div className="ml-4 space-y-3">
+                                          <p><strong>A. Operation</strong></p>
+                                          <ul className="list-disc ml-8 space-y-1">
+                                            <li>Non-Revenue Water (NRW)</li>
+                                            <li>Water Quality</li>
+                                            <li>Marketing</li>
+                                            <li>Customer Service</li>
+                                          </ul>
+                                          
+                                          <p><strong>B. Support to Operation (STO)</strong></p>
+                                          <ul className="list-disc ml-8 space-y-1">
+                                            <li>Environment</li>
+                                            <li>Operation & Management</li>
+                                          </ul>
+                                          
+                                          <p><strong>C. General Administration & Support Services (GASS)</strong></p>
+                                          <ul className="list-disc ml-8 space-y-1">
+                                            <li>Human Resource and Organizational Development</li>
+                                            <li>Finance</li>
+                                          </ul>
+                                        </div>
+                                      </div>
+
+                                      <div>
+                                        <h4 className="text-lg font-bold text-blue-900 mb-3">Good Governance Conditions</h4>
+                                        <p className="mb-3">The agency is also compliant to the Good Governance Condition set by the Inter-Agency Task Force (IATF) such as:</p>
+                                        <ul className="list-disc ml-8 space-y-1">
+                                          <li>Transparency Seal</li>
+                                          <li>PhilGEPS Posting</li>
+                                          <li>Citizen's Charter</li>
+                                          <li>SALN Submission/Filling</li>
+                                          <li>Report on Ageing Cash Advances</li>
+                                        </ul>
+                                        <p className="mt-4">The said documents were submitted to DBM in relation to Inter-Agency Task Force (IATF) and Good Governance Condition for GOCC's instruction last December 27, 2013 and January 13, 2014 respectively.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                ),
+                              },
                             ]}
                           />
                         </CardContent>
