@@ -578,10 +578,10 @@ export default function HR() {
                       <Card className="shadow-xl">
                         <CardContent className="p-6">   
                           <Tabs
-                            defaultActiveKey="8-1"
+                            defaultActiveKey="9-1"
                             items={[
                               {
-                                key: '8-1',
+                                key: '9-1',
                                 label: <div className="text-lg mx-4 font-semibold">Administrative Discipline</div>,
                                 children: (
                                   <div className="max-w-4xl mx-auto">
@@ -852,25 +852,270 @@ export default function HR() {
                                       <h4 className="text-lg font-bold text-blue-900 mb-3 mt-6">COMMITMENT</h4>
                                       <p className="mb-4">I hereby commit to implement the provisions of this Grievance Machinery and take necessary action in accordance with existing civil service law and rules against supervisors or officials who refuse to act on a grievance brought before their attention.</p>
 
-                                        <div className="border-t pt-6 mt-6">
-                                          <p className="font-bold text-center mb-2">Approved by:</p>
-                                          <p className="text-center font-semibold">HILARION P. VISANDE, JR.</p>
-                                          <p className="text-center">General Manager</p>
-                                          <p className="text-center mt-4 font-bold">CSC Action:</p>
-                                          <p className="text-center mb-2">I have evaluated the herein agency Grievance Machinery and found it to be in accordance with the provision of CSC MC 02, s. 2001 and may now be implemented.</p>
-                                          <p className="text-center font-semibold mt-2">ELMER R. BARTOLATA</p>
-                                          <p className="text-center">CSC Regional Director</p>
-                                        </div>
+                                      <div className="border-t pt-6 mt-6">
+                                        <p className="font-bold text-center mb-2">Approved by:</p>
+                                        <p className="text-center font-semibold">HILARION P. VISANDE, JR.</p>
+                                        <p className="text-center">General Manager</p>
+                                        <p className="text-center mt-4 font-bold">CSC Action:</p>
+                                        <p className="text-center mb-2">I have evaluated the herein agency Grievance Machinery and found it to be in accordance with the provision of CSC MC 02, s. 2001 and may now be implemented.</p>
+                                        <p className="text-center font-semibold mt-2">ELMER R. BARTOLATA</p>
+                                        <p className="text-center">CSC Regional Director</p>
                                       </div>
                                     </div>
-                                  ),
-                                },
-                              ]}
-                            />
+                                  </div>
+                                ),
+                              },
+                            ]}
+                          />
                         </CardContent>
                       </Card>
                     ),
-                  }
+                  },
+                  {
+                    key: '9',
+                    label: (
+                      <div className="text-lg font-semibold">Compensation and Benefits</div>
+                    ),
+                    children: (
+                      <Card className="shadow-xl">
+                        <CardContent className="p-6">   
+                          <Tabs
+                            defaultActiveKey="9-1"
+                            items={[
+                              {
+                                key: '9-1',
+                                label: <div className="text-lg mx-4 font-semibold">Leave Administration</div>,
+                                children: (
+                                  <div className="max-w-4xl mx-auto">
+                                    <div className="text-center mb-8">
+                                      <h3 className="text-2xl font-bold text-blue-900 mb-2 mt-8">LEAVE ADMINISTRATION</h3>
+                                      <p className="text-gray-600">For Polomolok Water District (PolWD)</p>
+                                    </div>
+                                    
+                                    <div className="space-y-6 text-gray-700">
+                                      <div>
+                                        <h4 className="text-lg font-bold text-blue-900 mb-3">I. BASIC POLICY</h4>
+                                        <p className="mb-4">Polomolok Water District recognizes the importance of valuable information on government policies regarding responsibilities, rights, privileges and their benefits.</p>
+                                      </div>
+                                      <div>
+                                        <h4 className="text-lg font-bold text-blue-900 mb-3">II. OBJECTIVES</h4>
+                                        <p><strong>1.</strong> Provide employees valuable information on the government policies on leave.</p>
+                                        <p><strong>2.</strong> Provide employees working guidelines and employees assigned perform task of leave administration.</p>
+                                      </div>
+                                      <div>
+                                        <h4 className="text-lg font-bold text-blue-900 mb-3">III. SCOPE</h4>
+                                        <p className="mb-3"><strong>All permanent employees of Polomolok Water District.</strong></p>
+                                      </div>
+                                      
+                                      <div>
+                                        <h4 className="text-lg font-bold text-blue-900 mb-3">IV. PROCEDURE</h4>
+                                        
+                                        <div className="space-y-4">
+                                          <div>
+                                            <p className="font-semibold">Application for Leave</p>
+                                            <div className="ml-4 space-y-2 mt-2">
+                                              <p><strong>a. Vacation Leave</strong> – shall be filed five (5) days in advance of the effective date of such leave; the grant of vacation leave shall be at the discretion of the head of department/ agency.</p>
+                                              <p><strong>b. Sick Leave</strong> – shall be filed immediately upon the employee's return from such leave; notice of absence, however, shall be sent to the immediate supervisor and/or to the agency head; application for sick leave in excess of five (5) days successive days shall be accompanied by a proper medical certificate.</p>
+                                              
+                                              <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500 my-3">
+                                                <p className="font-semibold text-blue-900 mb-2">INTERNAL POLICY ON LEAVE APPLICATION</p>
+                                                <p className="mb-2">Failure to submit a leave application 3 days after upon return to office would be considered absence without pay (AWOP) equivalent to the number of days already taken.</p>
+                                                <p>The division head, as recommending authority, shall automatically disapprove the application. The head of the agency shall approve the application for the number of days without pay. This shall be the basis of the Finance Division in the computation of AWOP.</p>
+                                              </div>
+                                              
+                                              <p><strong>c. Special Leave</strong> – five (5) days in advance except for emergency cases.</p>
+                                              <p className="text-sm text-gray-600 italic">Date of Effectivity: January 12, 2010</p>
+                                            </div>
+                                          </div>
+
+                                          <div>
+                                            <p><strong>2. Leave Without Pay</strong> – all absences of an official or employee in excess of his accumulated vacation and sick leave credits shall be without pay; when an employee has already exhausted his sick leave, he can use his vacation leave credits but not vice versa; leave without pay in excess of one month shall require the clearance of the proper head of department or agency.</p>
+                                          </div>
+
+                                          <div>
+                                            <p><strong>3. Leave during probationary period</strong> – an employee on probation may already avail of whatever leave credits he has earned during said period. Accordingly, any leave of absence without pay incurred during the period of probation shall extend the completion thereof for the same number of days of such absence.</p>
+                                          </div>
+
+                                          <div>
+                                            <p><strong>4. Effect of unauthorized leave</strong> – an official/ employee who is absent without approved leave shall not be entitled to receive his salary corresponding to the period of his unauthorized leave of absence; it is understood, however, that his absence shall no longer be deducted from his accumulated leave credits.</p>
+                                          </div>
+
+                                          <div>
+                                            <p><strong>5. Period within which act on leave application</strong> – whenever the application for leave of absence, including terminal leave, is not acted upon by the head of the agency or is duly authorized representative within 5 working days after receipt thereof, the application for leave of absence shall be deemed approved.</p>
+                                          </div>
+
+                                          <div>
+                                            <p><strong>6. Five days mandatory / forced leave</strong> – all officials and employees with 10 days or more vacation leave credits shall be required to go on vacation leave whether continuous or intermittent for a minimum of five (5) working days annually under the following conditions:</p>
+                                            <ul className="list-disc ml-8 mt-2 space-y-1">
+                                              <li><strong>a.</strong> Preparation of staggered schedule (unless cancelled due to exigency of service)</li>
+                                              <li><strong>b.</strong> Forfeiture if not taken during the year (to be deducted from VL credits)</li>
+                                              <li><strong>c.</strong> Only those with less than ten (10) days shall have the option to go on forced leave or not.</li>
+                                            </ul>
+                                          </div>
+
+                                          <div>
+                                            <p><strong>7. Tardiness and Undertime</strong> – are deducted against vacation leave credits.</p>
+                                            <p className="mt-2">Counting of frequency starts after a grace period of 5 minutes</p>
+                                            <p className="mt-2">The employee who incurs ten (10) times tardy for two (2) months in a semester or two (2) consecutive months in a year will be subject to penalty:</p>
+                                            <ul className="list-disc ml-8 mt-2 space-y-1">
+                                              <li><strong>1st offense</strong> – reprimand</li>
+                                              <li><strong>2nd offense</strong> – suspension</li>
+                                              <li><strong>3rd offense</strong> – dismissal</li>
+                                            </ul>
+                                            <p className="mt-2">Undertime is not counted as frequency for tardiness.</p>
+                                            
+                                            <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500 mt-3">
+                                              <p className="font-semibold text-green-900 mb-2">For perfect attendance award:</p>
+                                              <ul className="list-disc ml-6 space-y-1">
+                                                <li>No sick / vacation leave except the special leave and 5-day forced leave.</li>
+                                                <li>No record of undertime and tardiness.</li>
+                                              </ul>
+                                            </div>
+                                          </div>
+
+                                          <div>
+                                            <p><strong>8. Computation of vacation and sick leave</strong> – shall be made on the basis of one day vacation and one day sick leave every 24 days of actual service. "Actual service" refers to the period of continuous service since the appointment of the official or employee concerned, including periods covered by any previously approved leave with pay.</p>
+                                          </div>
+
+                                          <div>
+                                            <p><strong>9. Monetization of leave credits</strong> – officials and employees in the career and non-career service whether permanent, temporary, casual or co-terminous, who have accumulated fifteen (15) days of vacation leave credits shall be allowed to monetize a minimum of ten (10) days: Provided, that at least five (5) days is retained after monetization and provided further that a maximum of thirty (30) days may be monetized in a given year.</p>
+                                            <p className="mt-2 font-semibold">Monetization of 50% or more vacation/ sick leave credits maybe allowed for valid and justifiable reasons such as:</p>
+                                            <ul className="list-disc ml-8 mt-2 space-y-1">
+                                              <li><strong>a.</strong> Health, medical and hospital needs of the employee and the immediate members of his family;</li>
+                                              <li><strong>b.</strong> Financial aid and assistance brought about by force majeure events such as calamities, typhoons, fire, earthquake and accidents that affect the life, limb and property of the employee and his/ her immediate family;</li>
+                                              <li><strong>c.</strong> Educational needs of the employee and the immediate members of his/ her family.</li>
+                                              <li><strong>d.</strong> Payment of mortgages and loans which were entered into for the benefit or which inured to the benefit of the employee and his/ her immediate family;</li>
+                                              <li><strong>e.</strong> In cases of extreme financial needs of the employee or his/her immediate family where the present sources of income are not enough to fulfill basic needs such as food, shelter and clothing;</li>
+                                              <li><strong>f.</strong> Other analogous cases as may be determined by the Commission.</li>
+                                            </ul>
+                                            <p className="mt-2">The monetization of 50% or more of the accumulated leave credits shall be upon the favorable recommendation of the agency head and subject to availability of funds.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div>
+                                        <h4 className="text-lg font-bold text-blue-900 mb-3">V. DEFINITION OF TERMS</h4>
+                                        <div className="space-y-2">
+                                          <p><strong>1. Leave of absence</strong> – is generally defines as a right granted to officials and employees not to report for work with or without pay as may be provided by law and as the rules prescribe in Rule XVI hereof.</p>
+                                          <p><strong>2. Commutation of leave credits</strong> – refers to conversion of unused leave credits to their corresponding money value.</p>
+                                          <p><strong>3. Cumulation of leave credits</strong> – refers to incremental acquisition of unused leave credits by an official or employee.</p>
+                                          <p><strong>4. Immediate family</strong> – refers to the spouse, children, parents, unmarried brothers and sisters and any relative living under the same roof or dependent upon the employee for support.</p>
+                                          <p><strong>5. Sick leave</strong> – refers to leave of absence granted only on account of sickness or disability on the part of the employee concerned or any member of his immediate family.</p>
+                                          <p><strong>6. Vacation leave</strong> – refers to leave of absence granted to officials and employees for personal reasons, the approval of which is contingent upon the necessities of the service.</p>
+                                          <p><strong>7. Monetization</strong> – refers to payment in advance under prescribed limits and subject to specified terms and conditions of the money value of leave credits of an employee upon his request without actually going on leave.</p>
+                                          <p><strong>8. Pregnancy</strong> – refers to the period between conception and delivery or birth of a child. For purposes of maternity leave, miscarriage is within the period of pregnancy.</p>
+                                          <p><strong>9. Maternity leave</strong> – refers to leave of absence granted to female government employees legally entitled thereto in addition to vacation and sick leave. The primary intent or purpose of granting maternity leave is to extend working mothers some measures of financial help and to provide her a period of rest and recuperation in connection with her pregnancy.</p>
+                                          <p><strong>10. Paternity leave</strong> – refers to the privilege granted to a married male employee allowing him not to report for work for seven (7) days while continuing to earn the compensation therefore, on the condition that his legitimate spouse has delivered a child or suffered a miscarriage, for purposes of enabling him to effectively lend care and support to his wife before, during and after childbirth as the case may be assist in caring for his newborn child.</p>
+                                          <p><strong>11. Terminal leave</strong> – refers to money value of the total accumulated leave credits of an employee based on the highest salary rate received prior to or upon retirement date/ voluntary separation.</p>
+                                          <p><strong>12. Special leave privileges</strong> – refers to leave of absence which officials and employees may avail of for a maximum of three (3) days annually over and above the vacation, sick, maternity and paternity leaves to mark personal milestone and or attend filial and domestic responsibilities.</p>
+                                          <p><strong>13. Relocation leave</strong> – refers to a special leave privilege granted official / employee whenever he/ she transfers residence.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                ),
+                              },
+                              {
+                                key: '9-2',
+                                label: <div className="text-lg mx-4 font-semibold">E-DTR</div>,
+                                children: (
+                                  <div className="max-w-4xl mx-auto">
+                                    <div className="text-center mb-8">
+                                      <h3 className="text-2xl font-bold text-blue-900 mb-2 mt-8">EMPLOYEE'S DAILY TIME RECORD</h3>
+                                      <p className="text-gray-600">For Polomolok Water District (PolWD)</p>
+                                    </div>
+                                    
+                                    <div className="space-y-6 text-gray-700">
+                                      <div>
+                                        <h4 className="text-lg font-bold text-blue-900 mb-3">I. BASIC POLICY</h4>
+                                        <p className="mb-4">Excellent attendance is an expectation of all employees of the agency. Daily attendance is especially important for hourly employees whose customers and coworkers have the expectation of on-time services.</p>
+                                      </div>
+                                      <div>
+                                        <h4 className="text-lg font-bold text-blue-900 mb-3">II. OBJECTIVES</h4>
+                                        <p><strong>1.</strong> Provides and computes hours work, late, under time, holiday, rest day, nightshift differential and other related computations.</p>
+                                        <p><strong>2.</strong> Provides interface to schedule employee by group or individual.</p>
+                                        <p><strong>3.</strong> Keep history of employee schedule.</p>
+                                      </div>
+                                      <div>
+                                        <h4 className="text-lg font-bold text-blue-900 mb-3">III. SCOPE</h4>
+                                        <p className="mb-4"><strong>All permanent employees of Polomolok Water District.</strong></p>
+                                      </div>
+                                      <div>
+                                        <h4 className="text-lg font-bold text-blue-900 mb-3">IV. MODULES / PROGRAM FEATURES</h4>
+                                        <p><strong>1.</strong> Employee Profile</p>
+                                        <ul className="list-disc ml-8 mt-2 space-y-1">
+                                          <li>Employee joining information.</li>
+                                          <li>Employee profile.</li>
+                                          <li>Family background details.</li>
+                                          <li>Employee emergency address and contact person details.</li>
+                                          <li>Employee current position and job profile.</li>
+                                          <li>Employee local address.</li>
+                                        </ul>
+                                        <p className="mt-2"><strong>2.</strong> Company Profile</p>
+                                        <ul className="list-disc ml-8 mt-2 space-y-1">
+                                          <li>Company information.</li>
+                                          <li>Company holiday.</li>
+                                        </ul>
+                                        <p className="mt-2"><strong>3.</strong> Leave Management System</p>
+                                        <ul className="list-disc ml-8 mt-2 space-y-1">
+                                          <li>User defined leave types.</li>
+                                          <li>Leave application.</li>
+                                          <li>Leave rules.</li>
+                                          <li>Leave balance details.</li>
+                                        </ul>
+                                        <p className="mt-2"><strong>4.</strong> Time Management System</p>
+                                        <ul className="list-disc ml-8 mt-2 space-y-1">
+                                          <li>Time In/Out management.</li>
+                                          <li>Employee schedule / Shift management.</li>
+                                          <li>Monitors late, under time, absent.</li>
+                                          <li>Overtime details.</li>
+                                        </ul>
+                                        <p className="mt-2"><strong>5.</strong> Company Reports</p>
+                                        <ul className="list-disc ml-8 mt-2 space-y-1">
+                                          <li><strong>A. Company Reports</strong></li>
+                                          <ul className="list-disc ml-8 mt-2 space-y-1">
+                                            <li>Company details.</li>
+                                            <li>Company holidays.</li>
+                                            <li>Leave type detail.</li>
+                                          </ul>
+                                          <li><strong>B. Leave and Attendance Reports</strong></li>
+                                          <ul className="list-disc ml-8 mt-2 space-y-1">
+                                            <li>Employee leave application.</li>
+                                            <li>Employee leave approval.</li>
+                                            <li>Leave balance.</li>
+                                            <li>Late and Undertime.</li>
+                                            <li>Shift details.</li>
+                                            <li>Employee current shift.</li>
+                                            <li>Overtime details.</li>
+                                            <li>Daily/Monthly attendance report.</li>
+                                            <li>Used leave details.</li>
+                                            <li>In/Out summary.</li>
+                                            <li>Attendance summary.</li>
+                                            <li>Holiday Work.</li>
+                                            <li>Current employees.</li>
+                                            <li>Device In/Out details (if manually inputted or by using hardware like ID and password).</li>
+                                          </ul>
+                                          <li><strong>C. Employee Reports</strong></li>
+                                          <ul className="list-disc ml-8 mt-2 space-y-1">
+                                            <li>Employee date hired.</li>
+                                            <li>Employee profile.</li>
+                                            <li>Department employee list.</li>
+                                            <li>Family background details.</li>
+                                            <li>Contact details.</li>
+                                            <li>Birthday list.</li>
+                                          </ul>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                ),
+                              },
+                            ]}
+                          />
+                        </CardContent>
+                      </Card>
+                    ),
+                  }, 
                 ]}
               />
             </div>
