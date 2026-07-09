@@ -1112,7 +1112,7 @@ export default function HR() {
                               },
                               {
                                 key: '9-3',
-                                label: <div className="text-lg mx-4 font-semibold">Performance-Based Bonus (PBB)</div>,
+                                label: <div className="text-lg mx-4 font-semibold">PBB</div>,
                                 children: (
                                   <div className="max-w-4xl mx-auto">
                                     <div className="text-center mb-8">
