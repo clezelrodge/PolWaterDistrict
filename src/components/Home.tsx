@@ -101,7 +101,7 @@ export function Home({ onNavigate }: HomeProps) {
       icon: Download,
       title: 'Downloadable Forms',
       description: 'For your convenience, here are our downloadable forms',
-      link: '#'
+      onClick: () => onNavigate('forms')
     },
     {
       icon: Trophy,
@@ -323,7 +323,10 @@ export function Home({ onNavigate }: HomeProps) {
                   transition: `transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) ${index * 150}ms, opacity 0.8s ease ${index * 150}ms`,
                 }}
               >
-                <Card className="group h-full hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-200 cursor-pointer">
+                <Card 
+                  className="group h-full hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-200 cursor-pointer"
+                  onClick={link.onClick}
+                >
                   <CardContent className="p-8">
                     <div className="h-16 w-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
                       {/* Fixed: Added conditional rendering to handle null icons gracefully */}

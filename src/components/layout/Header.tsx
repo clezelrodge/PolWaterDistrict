@@ -27,6 +27,7 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
     { label: 'CSR', value: 'csr' },
     { label: 'GAD', value: 'gad' },
     { label: 'HR', value: 'hr' },
+    { label: 'Forms', value: 'forms' },
   ];
 
   return (

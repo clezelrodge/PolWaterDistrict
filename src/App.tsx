@@ -10,9 +10,10 @@ import { BackToTop } from './components/ui/arrowup';
 // App.tsx
 import GAD from './components/GAD';
 import HR from './components/HR';
+import { Forms } from './components/Forms';
 
 // Define the possible views
-export type View = 'home' | 'services' | 'about' | 'csr' | 'gad' | 'hr';
+export type View = 'home' | 'services' | 'about' | 'csr' | 'gad' | 'hr' | 'forms' | 'announcements' | 'images' | 'news' | 'lib' | 'contact';
 
 function App() {
   const [activeView, setActiveView] = useState<View>('home');
@@ -42,6 +43,8 @@ function App() {
         return <GAD />;
       case 'hr':
         return <HR />;
+      case 'forms':
+        return <Forms />;
       case 'contact':
         return <div className="min-h-screen flex items-center justify-center p-8"><h1 className="text-4xl font-bold text-blue-900">Contact Page - Coming Soon</h1></div>;
       default:

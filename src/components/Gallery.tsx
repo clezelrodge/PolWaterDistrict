@@ -4,8 +4,9 @@ export function Gallery() {
   const galleryItems = [
     {
       key: '1',
-      label: 'Board of Directors',
-      children: <p className="text-lg text-gray-700">Board of Directors content goes here</p>,
+      label: 'Gallery',
+      children: <p className="text-lg text-gray-700">
+        content goes here</p>,
     },
   ];
 
