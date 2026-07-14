@@ -27,7 +27,6 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
     { label: 'CSR', value: 'csr' },
     { label: 'GAD', value: 'gad' },
     { label: 'HR', value: 'hr' },
-    { label: 'Forms', value: 'forms' },
   ];
 
   return (
@@ -44,7 +43,10 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-3">
+          <div 
+            className="flex items-center gap-3 cursor-pointer"
+            onClick={() => onNavigate('home')}
+          >
             <img 
               src="/PolWD_Logo.jpg" 
               alt="Polomolok Water District Logo" 
