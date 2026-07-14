@@ -5,8 +5,7 @@ export function Gallery() {
     {
       key: '1',
       label: 'Gallery',
-      children: <p className="text-lg text-gray-700">
-        content goes here</p>,
+      children: <p className="text-lg text-gray-700">content goes here</p>,
     },
   ];
 
